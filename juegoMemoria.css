@@ -10,7 +10,6 @@ body{
     background-image: url(pizarra-colegio.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-	overflow: hidden;
 }
 .container{
 	max-width: 600px;

@@ -2,48 +2,56 @@
     scroll-behavior: smooth;
 }*/
 
-body{
+body {
 
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-image: url(pizarra-colegio.jpg);
+    /* background-image: url(pizarra-colegio.jpg); */
     background-repeat: no-repeat;
     transition: 1s;
     background-size: cover;
     /*overflow: hidden;*/
-   
+
 }
 
-.logooo {
+
+.nav {
+    background-color: #0f2b5f;
+    width: 96%;
     display: flex;
-    margin: 10px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1% 2%;
+    align-items: center;
     position: fixed;
-    z-index: 11;
-   
+    z-index: 500000;
 }
 
-
-.logooo h1{
-    color: #ffffff;
-    font-size: 40px;
-    margin-left: 15px;
-    margin-top: 0px;
-
-
-}
-.logooo img{
-    height: 50px;
-    
+.nombreLogo {
+    display: flex;
+    width: 25%;
+    justify-content: left;
+    align-items: center;
 }
 
+.nombreLogo img {
+    width: 50px;
+    margin-right: 4%;
+}
 
-hr{
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+}
+
+hr {
     border: .5px solid rgb(182, 182, 182);
     width: 90%;
-   
+
 }
 
-#section-3{
+#section-3 {
     width: 100%;
     height: 100vh;
     background-image: url(pizarra.png);
@@ -51,52 +59,52 @@ hr{
     background-size: cover;
 }
 
-.items{
+.items {
     display: flex;
-   justify-content: center;
-   flex-direction: block;
- 
+    justify-content: center;
+    flex-direction: block;
+
 }
 
-.item{
+.item {
     width: 80px;
     height: 80px;
     border-radius: 10px;
     transition: .5s;
 
-    
+
 
 }
 
-.item:hover{
-    transform:translateY(-50px);
+.item:hover {
+    transform: translateY(-50px);
     transition: .3s;
 }
 
-.item__div{
+.item__div {
     background-color: #124783;
     margin: 10px;
-    background: linear-gradient(rgba(80, 100, 255, .6),rgba(150, 150, 255, .8));
+    background: linear-gradient(rgba(80, 100, 255, .6), rgba(150, 150, 255, .8));
     border-radius: 10px;
     width: 100px;
     height: 100px;
     display: flex;
     justify-content: center;
-   
+
     align-items: center;
-   text-align: center;
-   align-content: center;
-    
+    text-align: center;
+    align-content: center;
+
     margin: 50px;
-    box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
-transition: .5s;
+    box-shadow: -1px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    transition: .5s;
 
 }
 
 
-.item__div h4{
+.item__div h4 {
     color: #fff;
     position: absolute;
     top: 320px;
@@ -104,56 +112,60 @@ transition: .5s;
     justify-content: center;
 }
 
-.item__div:hover{
-    
-    background: linear-gradient(rgba(2, 17, 130, 0.6),rgba(0, 0, 147, 0.8)) ;
-    transition: 1s;
- 
-   
-  
-}
- 
+.item__div:hover {
 
-#brain{
+    background: linear-gradient(rgba(2, 17, 130, 0.6), rgba(0, 0, 147, 0.8));
+    transition: 1s;
+
+
+
+}
+
+
+#brain {
     height: 150px;
     width: 150px;
 }
 
-#brain__h4{
+#brain__h4 {
     transform: translateX(25px);
 }
-#titulo-opciones{
+
+#titulo-opciones {
     display: flex;
     justify-content: center;
-    
+
 
     position: relative;
 
     font-family: 'Darumadrop One', cursive;
 }
+
 @keyframes flotar {
     0% {
-      transform: translateX(0), translateY(0);
+        transform: translateX(0), translateY(0);
     }
-    50% {
-      transform: translateX(20px);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
 
-#titulo-opciones h1{
-    color:#fff;
-    
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#titulo-opciones h1 {
+    color: #fff;
+
     display: flex;
     font-size: 60px;
     text-shadow: 4px 3px 0 #124783;
-    
+
     animation: flotar 2s ease-in-out infinite;
 }
 
-.container_s3{
+.container_s3 {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -164,8 +176,8 @@ transition: .5s;
     border-radius: 10px;
     background: linear-gradient(rgba(195, 195, 195, 0.4), rgba(186, 186, 186, 0.4));
     box-shadow: -1px 2px 5px 7px rgba(255, 255, 255, 0.75);
--webkit-box-shadow: -1px 2px 5px 7px rgba(255, 255, 255, 0.75);
--moz-box-shadow: -1px 2px 5px 7px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: -1px 2px 5px 7px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: -1px 2px 5px 7px rgba(255, 255, 255, 0.75);
 }
 
 
@@ -174,7 +186,9 @@ transition: .5s;
 
 
 
-#jo, #f, #o{
+#jo,
+#f,
+#o {
     transform: translateX(-15px);
 }
 
@@ -185,16 +199,17 @@ transition: .5s;
 
 
 
-#section-4{
+#section-4 {
     display: flex;
     width: 100%;
     height: 100vh;
-    background-image: url(pizarra.png) ;
+    background-image: url(pizarra.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: static;
 }
-.jerarquia{
+
+.jerarquia {
     width: 100%;
     height: 400px;
     left: 0%;
@@ -209,19 +224,19 @@ transition: .5s;
 }
 
 
-.jerarquia h1{
+.jerarquia h1 {
     color: #fff;
     font-family: poppins;
 
 }
 
-.jerarquia p{
+.jerarquia p {
     color: #fff;
     font-family: 'Darumadrop One', cursive;
     font-size: 25px;
 }
 
-.content__pizarraMath{
+.content__pizarraMath {
     display: none;
     position: absolute;
     flex-direction: column;
@@ -233,7 +248,7 @@ transition: .5s;
     right: 200px;
 }
 
-.content__pizarraMath h3{
+.content__pizarraMath h3 {
     background: linear-gradient(rgba(150, 150, 150, .5), rgba(150, 150, 150, .5));
     color: #39b91c;
     padding: 5px;
@@ -246,7 +261,7 @@ transition: .5s;
 
 }
 
-.content__pizarraMath p{
+.content__pizarraMath p {
     color: #fff;
     font-family: 'Darumadrop One', cursive;
     width: 500px;
@@ -264,14 +279,12 @@ transition: .5s;
 
 
 
-.logooo a{
-    text-decoration: none;
-}
 
 
 
 
-#home{
+
+#home {
     position: absolute;
     justify-content: center;
     background-color: #f0bc84;
@@ -285,160 +298,118 @@ transition: .5s;
     bottom: 10px;
     z-index: 90000000;
     left: 10px;
-    filter:invert(150%);
+    filter: invert(150%);
 }
 
-#home:hover{
+#home:hover {
     background-color: #ff952c;
 }
-#home img{
+
+#home img {
     height: 30px;
     padding: 5px;
     color: #fff;
     filter: contrast(150%);
 }
-nav{
-    width: 100%;
-    height: 70px;
-    background-color: #124783;
-    margin: 0;
-    display: flex;
-    justify-content: end;
-    
-    z-index: 10;
-    position: fixed;
-    
-}
-
-nav ul{
-    display: flex;
-    width: 40%;
-    justify-content: space-evenly;
-    align-items: center;
-
-    
-
-}
 
 
-nav li{
-    list-style: none;
-}
-nav a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;   
-    transition: .5s;
-
-}
-
-nav a:hover{
-    
-    color: #4299FA;
-    border-bottom: 1px solid #ffffff;
-    
-
-}
 
 
-  
- 
- 
-  
-#section-1{
+
+
+#section-1 {
     width: 100vw;
     height: 100vh;
     background-image: url(calculadora-cerca-papeleria-forma-geometrica.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: center ;
+    justify-content: center;
 
-   
-   
+
+
 }
 
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
- width: 100%;
+    width: 100%;
     position: relative;
     margin: auto;
     border-radius: 10px;
-    
+
 }
 
-.container img{
-    
+.container img {
+
     height: 500px;
-    
+
 }
 
 
-.pizarra{
-    
+.pizarra {
+
     display: flex;
-    
-   flex-direction: column;
+
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-  
+
     background-image: url(pizarra-colegio.jpg);
     background-size: cover;
     height: 62%;
-   
+
     width: 50%;
 }
 
 
-.cartel h1{
-    color:#fafdff;
+.cartel h1 {
+    color: #fafdff;
     font-weight: 900;
     font-size: 28px;
     position: absolute;
     left: 11.5%;
     top: 24%;
-   
+
     transform: rotate(-5deg);
-    text-shadow: 4px 4px 9px rgba(0,0,0,0.6);
+    text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.6);
     display: block;
-   
-    
-    
+
+
+
 }
 
-.cartel p{
-   position: absolute;
+.cartel p {
+    position: absolute;
     width: 170px;
     height: 20%;
     top: 18%;
     left: 11%;
-   
-  
+
+
     font-size: 18px;
     text-align: center;
     transform: rotate(-5deg);
     font-weight: bold;
-    color:#183711;
+    color: #183711;
     font-family: 'Darumadrop One', cursive;
     text-shadow: 4px 4px 9px rgba(4, 255, 0, 0.6);
     transition: .5s;
     display: none;
-    
+
 }
 
-.cartel h1 span{
+.cartel h1 span {
     color: #39b91c;
     text-shadow: 4px 4px 9px rgba(12, 255, 49, 0.6);
-    
+
 }
 
 
-.cartel img{
+.cartel img {
     display: flex;
     width: 90%;
     position: relative;
@@ -447,7 +418,7 @@ nav a:hover{
 }
 
 
-.cartel .info__math{
+.cartel .info__math {
     color: #fff;
     background-color: #39b91c;
     border: 2px solid white;
@@ -457,90 +428,90 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px ;
+    font-size: 30px;
     font-family: poppins;
     position: absolute;
     top: 42.7%;
     left: 16%;
-    transform:  rotate(-5deg) ;
-    
+    transform: rotate(-5deg);
+
 }
 
-#ocultar_info{
+#ocultar_info {
     position: absolute;
     top: 42.7%;
     left: 16%;
     display: none;
 }
 
-.cartel .info__math:hover{
+.cartel .info__math:hover {
     background-color: #183711;
-    transform: scale(110%) rotate(-5deg) ;
+    transform: scale(110%) rotate(-5deg);
     transition: .6s;
 
 }
 
 
-.pizarra h3{
+.pizarra h3 {
     color: #ffffff;
-    
+
     margin: 0%;
     letter-spacing: 1px;
     font-size: 70px;
     transition: .5s;
-   
-    
+
+
 }
 
 
 
-.pizarra h2{
-   
+.pizarra h2 {
+
     color: #39b91c;
     margin: 0%;
     font-size: 30px;
     font-family: 'Darumadrop One', cursive;
     letter-spacing: 1px;
     transition: .5s;
-    
+
 }
 
-.pizarra h2:hover{
+.pizarra h2:hover {
     transform: scale(125%);
     transition: 1s ease-in-out;
 }
 
-.item__a:active{
+.item__a:active {
     color: #4299FA;
 
 }
 
 
-.pizarra p{
+.pizarra p {
     margin: 0%;
-    
+
     color: #39b91c;
-    
+
     font-size: 30px;
     font-family: 'Darumadrop One', cursive;
     letter-spacing: 1px;
     transition: .5s;
 }
 
-.pizarra p:hover{
+.pizarra p:hover {
     transform: scale(120%);
     transition: 1s ease-in-out;
 }
 
 
-#section-2{
+#section-2 {
     display: flex;
     width: 100%;
     height: 100vh;
     background-image: url(escritorio-escuela-libros-texto-cerca-pizarra.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-  
+
 }
 
 
@@ -551,10 +522,10 @@ nav a:hover{
     color: #333;
     position: relative;
     animation: loading-text 1.5s ease-in-out infinite;
-  }
-  
-  .loading-text:before,
-  .loading-text:after {
+}
+
+.loading-text:before,
+.loading-text:after {
     content: "";
     position: absolute;
     height: 2px;
@@ -563,77 +534,85 @@ nav a:hover{
     left: 0;
     background-color: #6dd23e;
     animation: loading-bars 1.5s ease-in-out infinite;
-  }
-  
-  .loading-text:before {
+}
+
+.loading-text:before {
     transform: translateY(-10px);
-  }
-  
-  .loading-text:after {
+}
+
+.loading-text:after {
     transform: translateY(10px);
-  }
-  
-  @keyframes loading-text {
+}
+
+@keyframes loading-text {
     0% {
-      color: #fff;
+        color: #fff;
     }
+
     50% {
-      color: #6dd23e;
+        color: #6dd23e;
     }
+
     100% {
-      color: #fff;
+        color: #fff;
     }
-  }
-  
-  @keyframes loading-bars {
+}
+
+@keyframes loading-bars {
     0% {
-      transform: scale(1, 1);
+        transform: scale(1, 1);
     }
+
     25% {
-      transform: scale(2, 1);
+        transform: scale(2, 1);
     }
+
     50% {
-      transform: scale(1, 1);
+        transform: scale(1, 1);
     }
+
     75% {
-      transform: scale(1, 2);
+        transform: scale(1, 2);
     }
+
     100% {
-      transform: scale(1, 1);
+        transform: scale(1, 1);
     }
-  }
- 
-#info__jerarquia{
+}
+
+#info__jerarquia {
     display: none;
     flex-direction: column;
     position: relative;
     justify-content: start;
     text-align: center;
     left: 0px;
-   width: 90%;
-   
+    width: 90%;
+
 }
-  #info__jerarquia span{
+
+#info__jerarquia span {
     font-family: poppins;
 
     font-weight: bold;
     color: #abf;
-    
-  }
-  #info__jerarquia p{
+
+}
+
+#info__jerarquia p {
     font-size: 25px;
     top: 0px;
-  }
+}
 
 
 
- 
 
-  .titulo__jerarquia img{
+
+.titulo__jerarquia img {
     height: 100px;
-  }
+}
 
-  .titulo__jerarquia button{
+.titulo__jerarquia button {
     display: flex;
     background-color: #50a2ff;
     width: 400px;
@@ -648,66 +627,71 @@ nav a:hover{
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(0%);
-    
-  }
 
- .titulo__jerarquia button:hover{
+}
+
+.titulo__jerarquia button:hover {
     background-color: #124783;
-   
- }
 
- .titulo__jerarquia h1{
-    text-shadow: 4px 4px 9px rgba(0,0,0,0.6);
- }
+}
+
+.titulo__jerarquia h1 {
+    text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.6);
+}
 
 
 
- #toca__aqui{
+#toca__aqui {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     color: #fff;
     font-size: 20px;
-    
-   
+
+
     font-family: poppins;
     position: relative;
     top: 130px;
- }
-#toca__aqui h4{
+}
+
+#toca__aqui h4 {
     font-weight: bold;
     padding-bottom: 0%;
     position: relative;
     top: 0px;
-    
+
 
 }
- #toca__aqui img{
+
+#toca__aqui img {
     height: 30px;
     margin-top: 0;
     padding: 0;
     position: absolute;
     top: 220px;
     animation: flecha 2s ease-in-out infinite;
- }
+}
 
- @keyframes flecha {
-    0%{
+@keyframes flecha {
+    0% {
         transform: translateY(0);
-       
-    }50%{
-        transform: translateY(-50%);
-       
+
     }
-    100%{
+
+    50% {
+        transform: translateY(-50%);
+
+    }
+
+    100% {
         transform: translateY(0%);
     }
- }
+}
 
- .btn__jerarquia{
+.btn__jerarquia {
     display: none;
-    background-color: #50a2ff ;
+    background-color: #50a2ff;
     border: 1px solid #fff;
     color: #fff;
     font-size: 20px;
@@ -718,22 +702,23 @@ nav a:hover{
     top: 100px;
     padding: 5px;
     border-radius: 10px;
- }
+}
 
 
 
- .btn__jerarquia:hover{
+.btn__jerarquia:hover {
     background-color: #124783;
- }
+}
 
- #btn__ocultarJerarquia{
+#btn__ocultarJerarquia {
     top: 20em;
     width: 100px;
     justify-content: center;
     position: relative;
- }
-.ejercicios__jerarquia{
-   
+}
+
+.ejercicios__jerarquia {
+
     position: absolute;
     background-image: url(fondo.jpg);
     background-repeat: no-repeat;
@@ -745,75 +730,78 @@ nav a:hover{
     height: 200px;
     align-items: start;
 }
-#ejercicios__jerarquia{
+
+#ejercicios__jerarquia {
     display: none;
 }
- .img__einsteinEjercicios{
-   display: flex;
-   position: absolute;
-   top: 0px;
 
-   left: 0;
+.img__einsteinEjercicios {
+    display: flex;
+    position: absolute;
+    top: 0px;
+
+    left: 0;
     height: 150px;
     padding-left: 10px;
 
-    
- }
 
- .ejerciciosJerarquiaDificiles{
+}
+
+.ejerciciosJerarquiaDificiles {
     display: none;
     color: #fff;
     justify-content: space-around;
     width: 80%;
-   
+
     margin-top: 90px;
     margin-left: 150px;
- }
+}
 
- .ejerciciosJerarquiaDificiles h4{
+.ejerciciosJerarquiaDificiles h4 {
     color: #fff;
-    font-size: 20px ;
+    font-size: 20px;
     font-family: darumadrop;
     border: 1px solid white;
     border-radius: 10px;
     padding: 10px;
-   background-color: #124783;
- }
+    background-color: #124783;
+}
 
- .ejerciciosJerarquia{
+.ejerciciosJerarquia {
     color: #fff;
     justify-content: space-around;
     width: 80%;
     display: flex;
     margin-top: 90px;
     margin-left: 150px;
- }
+}
 
- .ejerciciosJerarquia h4{
+.ejerciciosJerarquia h4 {
     color: #fff;
-    font-size: 20px ;
+    font-size: 20px;
     font-family: darumadrop;
     border: 1px solid white;
     border-radius: 10px;
     padding: 10px;
-   background-color: #124783;
- }
- .tituloEjerciciosJerarquia{
+    background-color: #124783;
+}
+
+.tituloEjerciciosJerarquia {
     position: absolute;
     left: 27%;
     width: 100%;
     height: 30px;
-   margin: 0%;
-   padding: 0%;
+    margin: 0%;
+    padding: 0%;
     justify-content: center;
     align-items: flex-start;
- }
+}
 
- .tituloEjerciciosJerarquia h1{
-    text-shadow: 4px 4px 9px rgba(0,0,0,0.6);
- }
+.tituloEjerciciosJerarquia h1 {
+    text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.6);
+}
 
- .btns__jerarquia{
+.btns__jerarquia {
     display: flex;
     background-color: #124783;
     color: #fff;
@@ -825,49 +813,50 @@ nav a:hover{
     border-radius: 10px;
     left: 20px;
     transition: .5s;
- }
+}
 
- #ejerciciosFaciles:hover{
+#ejerciciosFaciles:hover {
     background-color: #4299FA;
     transform: scale(70%);
- }
+}
 
- #ejerciciosDificiles:hover{
+#ejerciciosDificiles:hover {
     background-color: #4299FA;
     transform: scale(70%);
- }
+}
 
-#ejerciciosFaciles{
+#ejerciciosFaciles {
     display: flex;
 }
 
-#ejerciciosDificiles{
+#ejerciciosDificiles {
     display: none;
 }
 
- 
 
-#section-5{
+
+#section-5 {
     width: 100%;
     height: 100vh;
     background-image: url(pizarra.png);
     background-repeat: no-repeat;
     background-size: cover;
+    display: none;
 }
 
-.btns__fracciones{
+.btns__fracciones {
     display: flex;
-   width: 800px;
-   height: 100px;
-   top: 350px;
-   position: relative;
-   margin: auto;
-   justify-content: center;
-   align-items: center;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    margin: auto;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.btn__fraccion{
+.btn__fraccion {
     margin-left: 40px;
     margin-right: 40px;
     display: flex;
@@ -878,28 +867,24 @@ nav a:hover{
     color: #fff;
     font-size: 20px;
     font-family: poppins;
-    text-shadow: 4px 4px 9px rgba(0,0,0,0.6);
+    text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.6);
     transition: .5s;
 
 }
 
-.btn__fraccion:hover{
+.btn__fraccion:hover {
     background-color: #124783;
 }
-.btns__fracciones img{
+
+.btns__fracciones img {
     height: 100px;
     padding: 10px;
 }
 
-#btn__fraccion2{
-    display: none;
-}
-
-
 
 .btn__cambio1 {
-   
-    
+
+
     color: #fff;
     font-size: 20px;
     top: 200px;
@@ -912,7 +897,7 @@ nav a:hover{
 
 
 .btn__cambio2 {
-   
+
     left: 450px;
     color: #fff;
     font-size: 20px;
@@ -920,7 +905,7 @@ nav a:hover{
     left: 200px;
 }
 
-.infoFracciones{
+.infoFracciones {
     width: 100%;
     display: none;
     justify-content: center;
@@ -930,55 +915,56 @@ nav a:hover{
 
 }
 
-.infoFracciones p{
+.infoFracciones p {
     color: #fff;
-    width: 80%;
+    width: 70%;
     font-family: 'Darumadrop One', cursive;
     font-size: 30px;
 }
 
-.infoFracciones p span{
+.infoFracciones p span {
     color: #4299FA;
 }
-.ejerciciosFracciones{
+
+.ejerciciosFracciones {
     display: none;
     align-items: center;
     position: relative;
-    top: 13%;
-    width: 90%;
-    left: 100px;
+    top: 8%;
+    width: 80%;
+    left: 10%;
     border: 3px solid #fff;
     border-radius: 10px;
     height: 150px;
-   background-image: url(fondo.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
-    
+    background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 
-.ejerciciosFraccionesDificiles{
+.ejerciciosFraccionesDificiles {
     display: none;
     justify-content: center;
     align-items: center;
     height: 100%;
-  
-  position: absolute;
-  margin-right: 40%;
-  width: 1000px;
-  top: 8%;
-  left: 250px;
- 
+
+    position: absolute;
+    margin-right: 40%;
+    width: 1000px;
+    top: 8%;
+    left: 250px;
+
 }
 
-.btn__ocultarFracciones{
+.btn__ocultarFracciones {
     display: flex;
     z-index: 5000;
     justify-content: center;
     align-items: center;
 }
 
-.btn__ocultarFracciones button{
+.btn__ocultarFracciones button {
     color: #fff;
     background-color: #4299FA;
     width: 100px;
@@ -990,16 +976,17 @@ nav a:hover{
     transition: .5s;
     position: relative;
     text-align: center;
-   left: 520px;
+    left: 520px;
 
 }
-.btn__mostrarFracciones{
+
+.btn__mostrarFracciones {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.btn__mostrarFracciones button{
+.btn__mostrarFracciones button {
     color: #fff;
     background-color: #4299FA;
     width: 100px;
@@ -1011,95 +998,98 @@ nav a:hover{
     transition: .5s;
     position: absolute;
     text-align: center;
-   right: 38px;
+    right: 38px;
 
 }
 
 
-.btn__ocultarFracciones button:hover{
+.btn__ocultarFracciones button:hover {
     background-color: #124783;
 }
-.btn__mostrarFracciones button:hover{
+
+.btn__mostrarFracciones button:hover {
     background-color: #000000;
 }
-.ejerciciosFraccionesDificiles h4{
+
+.ejerciciosFraccionesDificiles h4 {
     background-color: #124783;
     border: 1px solid #fff;
     border-radius: 10px;
     display: flex;
-   justify-content: center;
-   align-items: center;
-   color: #fff;
-   padding: 10px;
-   margin: 50px;
-   
-    height:  20%;
-}
-.ejerciciosFracciones img{
-   height: 120px;
-   left: 150px;
-    }
-
-.ejerciciosFraccionales{
-   display: flex;
-   position: absolute;
-   left: 150px;
-   top: 30px;
-
-}
-
-
-.ejerciciosFraccionales h4{
+    justify-content: center;
+    align-items: center;
     color: #fff;
-    font-size: 20px ;
+    padding: 10px;
+    margin: 50px;
+
+    height: 20%;
+}
+
+.ejerciciosFracciones img {
+    height: 120px;
+    left: 150px;
+}
+
+.ejerciciosFraccionales {
+    display: flex;
+    position: absolute;
+    left: 150px;
+    top: 30px;
+
+}
+
+
+.ejerciciosFraccionales h4 {
+    color: #fff;
+    font-size: 20px;
     font-family: darumadrop;
     border: 1px solid white;
     border-radius: 10px;
     padding: 10px;
-   background-color: #124783;
-   margin: 40px;
+    background-color: #124783;
+    margin: 40px;
 
 }
-   
- .ejerciciosFracciones h1{
-        color: #fff;
-        position: relative;
-        top: -50px;
-        font-size: 25px;
-        left: 50%;
-        text-shadow: 4px 4px 9px rgba(0,0,0,0.6);
-}
 
-#btn__ocultarFraccion{
-   background-color: #4299FA;
+.ejerciciosFracciones h1 {
     color: #fff;
-    text-shadow: 4px 4px 9px rgba(0,0,0,0.6);
+    position: relative;
+    top: -50px;
+    font-size: 25px;
+    left: 50%;
+    text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.6);
+}
+
+#btn__ocultarFraccion {
+    background-color: #4299FA;
+    color: #fff;
+    text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.6);
     border: 1px solid #fff;
     width: 120px;
     font-family: poppins;
     border-radius: 5px;
-   
-    
+
+
     height: 30px;
-    
+
     transition: .6s;
-     display: none;
+    display: none;
     justify-content: center;
-  
+
     align-items: center;
-   position: relative;
-   margin: auto;
-  
+    position: relative;
+    margin: auto;
+
 
 
 }
 
-#btn__ocultarFraccion:hover{
+#btn__ocultarFraccion:hover {
     background-color: #124783;
-    
+
 }
 
-#btn_mostrarFraccion{
+#btn_mostrarFraccion {
     width: 50px;
     display: flex;
     animation: flecha 2s ease-in-out infinite;
@@ -1108,58 +1098,61 @@ nav a:hover{
     margin: auto;
     top: 420px;
 }
-#btn_mostrarFraccion img{
+
+#btn_mostrarFraccion img {
     height: 30px;
 }
 
-@media (max-width: 800px){
-    .pizarra{
+@media (max-width: 800px) {
+    .pizarra {
 
         display: flex;
         justify-content: center;
         width: 100%;
         background-size: cover;
         padding: 3%;
-      
+
     }
 
-    
-    .pizarra p{
+
+    .pizarra p {
         font-size: 1.5em;
     }
 
-    .pizarra h2{
+    .pizarra h2 {
         font-size: 1.5em;
     }
-    
-    .pizarra h3{
+
+    .pizarra h3 {
         font-size: 3em;
     }
-  
-    .logooo h1{
-        font-size: 20px;
-        margin: auto;
-        padding: 10px;
+
+    nav a {
+        font-size: 16px;
     }
-  
-    .cartel{
+
+    .nombreLogo {
+        margin-right: 0px;
+    }
+
+    .cartel {
         display: none;
     }
 
-    .item__a{
+    .item__a {
         font-size: 18px;
     }
 
-    #section-1{
+    #section-1 {
         height: 100vh;
     }
 
-    #section-3{
+    #section-3 {
         display: flex;
         justify-content: center;
     }
 
-    .container_s3{
+    .container_s3 {
         left: 0%;
         width: 80%;
         height: 80vh;
@@ -1171,22 +1164,22 @@ nav a:hover{
         align-items: center;
     }
 
-    .items{
+    .items {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 150px 150px;
     }
-    
 
-    #titulo-opciones h1{
+
+    #titulo-opciones h1 {
         font-size: 30px;
         position: relative;
         top: -1em;
         margin-left: -1em;
-    
+
     }
 
-    .item__div{
+    .item__div {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1199,115 +1192,170 @@ nav a:hover{
         width: 80px;
         top: 50px;
     }
-    .item{
+
+    .item {
         height: 70px;
         margin: 0px;
         width: 70px;
     }
-   .item__div h4{
-    font-size: 12px;
-   }
 
-    #jo{
+    .item__div h4 {
+        font-size: 12px;
+    }
+
+    #jo {
         transform: translateY(2.5em) translateX(-1em);
     }
-    #f{
+
+    #f {
         transform: translateY(2.5em) translateX(-.5em);
     }
-    #o{
+
+    #o {
         transform: translateY(15.6em) translateX(-1em);
-    
+
     }
-    #brain__h4{
+
+    #brain__h4 {
         transform: translateY(15.6em) translateX(3em);
 
     }
-    
 
-    
-    .ejercicios__jerarquia{
+
+
+    .ejercicios__jerarquia {
         height: 100px;
         position: relative;
-     
+
     }
-   
-    #btn__ocultarJerarquia{
+
+    #btn__ocultarJerarquia {
         top: 0px;
     }
-   
 
-    #info__jerarquia p{
+
+    #info__jerarquia p {
         font-size: 16px;
     }
-  
 
-    #ejercicios__jerarquia{
+
+    #ejercicios__jerarquia {
         position: relative;
         display: none;
         justify-content: center;
         align-items: center;
         top: 50px;
     }
-   
-    .img__einsteinEjercicios{
+
+    .img__einsteinEjercicios {
         display: none;
     }
-   .tituloEjerciciosJerarquia{
-    justify-content: center;
-    align-items: center;
-    font-size: 8px;
-    display: flex;
-    left: 0%;
-    top: 0%;
 
-   }
-   .ejerciciosJerarquia h4{
-    font-size: 14px;
-    position: relative;
-    left: -5.5em;
-    top: -1em;
-    
-    padding: 4px;
-   }
+    .tituloEjerciciosJerarquia {
+        justify-content: center;
+        align-items: center;
+        font-size: 8px;
+        display: flex;
+        left: 0%;
+        top: 0%;
 
-   #dificilesJerarquia h4{
-    font-size: 12px;
-    padding: 5px;
-    height: 30px;
-    position: relative;
-    right: 6em;
-    width: 20em;
-    bottom: 20px;
-    
-   }
+    }
 
-  .btns__jerarquia {
-    display: flex;
-    position: absolute;
-    margin: auto;
-    left: 50%;
-    transform: translateX(
-        -50%
-    );
-    top: 9em;
-  }
-  
-  .btns__jerarquia:hover{
-    transform: scale(0%);
+    .ejerciciosJerarquia h4 {
+        font-size: 14px;
+        position: relative;
+        left: -5.5em;
+        top: -1em;
 
-    transform: translateY(0%), translateX(0%);
-  }
-  
+        padding: 4px;
+    }
 
-  .container{
-    display: flex;
-    justify-content: center;
-   
-   
-    position: relative;
-    margin: auto;
-   
-    align-items: center;
-  }
+    #dificilesJerarquia h4 {
+        font-size: 12px;
+        padding: 5px;
+        height: 30px;
+        position: relative;
+        right: 6em;
+        width: 20em;
+        bottom: 20px;
 
+    }
+
+    .btns__jerarquia {
+        display: flex;
+        position: absolute;
+        margin: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 9em;
+    }
+
+    .btns__jerarquia:hover {
+        transform: scale(0%);
+
+        transform: translateY(0%), translateX(0%);
+    }
+
+
+    .container {
+        display: flex;
+        justify-content: center;
+
+
+        position: relative;
+        margin: auto;
+
+        align-items: center;
+    }
+f
+
+    #btn__fraccion1 {
+        display: flex;
+        background-color: #50a2ff;
+        width: 400px;
+        height: 100px;
+        border: none;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #fff;
+        transition: .5s;
+        position: absolute;
+        left: 0px;
+    }
+
+    .infoFracciones p {
+        font-size: 12px;
+    }
+
+    #section-5 {
+        display: none;
+        place-items: center;
+        flex-direction: column;
+    }
+
+    #ejerciciosFracciones {
+        height: 10%;
+        display: flex;
+    }
+
+    #ejerciciosFracciones h1 {
+        font-size: 15px;
+        width: 200%;
+        left: 0%;
+    }
+
+    #ejerciciosFracciones img {
+        display: none;
+    }
+
+    #fracc__fac h4 {
+        font-size: 12px;
+        height: 3%;
+        width: 80px;
+    }
+
+    #fracc__h4 button {
+        height: 10px;
+    }
 }

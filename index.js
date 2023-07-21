@@ -84,8 +84,7 @@ function verEjerciciosFaciles() {
 
 
 function mostrarInfoFracciones() {
-    document.getElementById("btn__fraccion1").style.transform="translateY(-150%)";
-    document.getElementById("btn__fraccion2").style.transform="translateY(-200%)";
+    document.getElementById("btn__fraccion1").style.display="none";
     document.getElementById("ejerciciosFracciones").style.display="flex";
     document.getElementById("infoFraccionales").style.display="flex";
     document.getElementById("btn__ocultarFraccion").style.display="flex";
@@ -93,8 +92,7 @@ function mostrarInfoFracciones() {
 }
 
 function ocultarInfoFracciones() {
-    document.getElementById("btn__fraccion1").style.transform="translateY(0%)";
-    document.getElementById("btn__fraccion2").style.transform="translateY(-200%)";
+    document.getElementById("btn__fraccion1").style.display="flex";
     document.getElementById("ejerciciosFracciones").style.display="none";
     document.getElementById("infoFraccionales").style.display="none";
     document.getElementById("btn__ocultarFraccion").style.display="none";
