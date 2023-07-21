@@ -1,0 +1,1313 @@
+/*html{
+    scroll-behavior: smooth;
+}*/
+
+body{
+
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(pizarra-colegio.jpg);
+    background-repeat: no-repeat;
+    transition: 1s;
+    background-size: cover;
+    /*overflow: hidden;*/
+   
+}
+
+.logooo {
+    display: flex;
+    margin: 10px 20px;
+    position: fixed;
+    z-index: 11;
+   
+}
+
+
+.logooo h1{
+    color: #ffffff;
+    font-size: 40px;
+    margin-left: 15px;
+    margin-top: 0px;
+
+
+}
+.logooo img{
+    height: 50px;
+    
+}
+
+
+hr{
+    border: .5px solid rgb(182, 182, 182);
+    width: 90%;
+   
+}
+
+#section-3{
+    width: 100%;
+    height: 100vh;
+    background-image: url(pizarra.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.items{
+    display: flex;
+   justify-content: center;
+   flex-direction: block;
+ 
+}
+
+.item{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    transition: .5s;
+
+    
+
+}
+
+.item:hover{
+    transform:translateY(-50px);
+    transition: .3s;
+}
+
+.item__div{
+    background-color: #124783;
+    margin: 10px;
+    background: linear-gradient(rgba(80, 100, 255, .6),rgba(150, 150, 255, .8));
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+   
+    align-items: center;
+   text-align: center;
+   align-content: center;
+    
+    margin: 50px;
+    box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
+transition: .5s;
+
+}
+
+
+.item__div h4{
+    color: #fff;
+    position: absolute;
+    top: 320px;
+    text-align: center;
+    justify-content: center;
+}
+
+.item__div:hover{
+    
+    background: linear-gradient(rgba(2, 17, 130, 0.6),rgba(0, 0, 147, 0.8)) ;
+    transition: 1s;
+ 
+   
+  
+}
+ 
+
+#brain{
+    height: 150px;
+    width: 150px;
+}
+
+#brain__h4{
+    transform: translateX(25px);
+}
+#titulo-opciones{
+    display: flex;
+    justify-content: center;
+    
+
+    position: relative;
+
+    font-family: 'Darumadrop One', cursive;
+}
+@keyframes flotar {
+    0% {
+      transform: translateX(0), translateY(0);
+    }
+    50% {
+      transform: translateX(20px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+#titulo-opciones h1{
+    color:#fff;
+    
+    display: flex;
+    font-size: 60px;
+    text-shadow: 4px 3px 0 #124783;
+    
+    animation: flotar 2s ease-in-out infinite;
+}
+
+.container_s3{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    top: 27%;
+    width: 800px;
+    left: 25%;
+    border-radius: 10px;
+    background: linear-gradient(rgba(195, 195, 195, 0.4), rgba(186, 186, 186, 0.4));
+    box-shadow: -1px 2px 5px 7px rgba(255, 255, 255, 0.75);
+-webkit-box-shadow: -1px 2px 5px 7px rgba(255, 255, 255, 0.75);
+-moz-box-shadow: -1px 2px 5px 7px rgba(255, 255, 255, 0.75);
+}
+
+
+
+
+
+
+
+#jo, #f, #o{
+    transform: translateX(-15px);
+}
+
+
+
+
+
+
+
+
+#section-4{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url(pizarra.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: static;
+}
+.jerarquia{
+    width: 100%;
+    height: 400px;
+    left: 0%;
+    display: flex;
+    position: relative;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    top: 100px;
+    font-family: 'Raleway';
+
+}
+
+
+.jerarquia h1{
+    color: #fff;
+    font-family: poppins;
+
+}
+
+.jerarquia p{
+    color: #fff;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 25px;
+}
+
+.content__pizarraMath{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 600px;
+    height: 500px;
+    transition: .5s;
+    right: 200px;
+}
+
+.content__pizarraMath h3{
+    background: linear-gradient(rgba(150, 150, 150, .5), rgba(150, 150, 150, .5));
+    color: #39b91c;
+    padding: 5px;
+    border: 2px solid #39b91c;
+    font-size: 23px;
+    border-radius: 4px;
+    box-shadow: -1px 3px 14px 1px rgba(0, 255, 8, 0.58);
+    -webkit-box-shadow: -1px 3px 14px 1px rgba(17, 255, 77, 0.58);
+    -moz-box-shadow: -1px 3px 14px 1px rgba(66, 255, 23, 0.58);
+
+}
+
+.content__pizarraMath p{
+    color: #fff;
+    font-family: 'Darumadrop One', cursive;
+    width: 500px;
+    font-size: 22px;
+    position: relative;
+    top: -60px;
+}
+
+
+
+
+
+
+
+
+
+
+.logooo a{
+    text-decoration: none;
+}
+
+
+
+
+#home{
+    position: absolute;
+    justify-content: center;
+    background-color: #f0bc84;
+    align-items: center;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    border: 3px solid #000000;
+    position: fixed;
+    bottom: 10px;
+    z-index: 90000000;
+    left: 10px;
+    filter:invert(150%);
+}
+
+#home:hover{
+    background-color: #ff952c;
+}
+#home img{
+    height: 30px;
+    padding: 5px;
+    color: #fff;
+    filter: contrast(150%);
+}
+nav{
+    width: 100%;
+    height: 70px;
+    background-color: #124783;
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    
+    z-index: 10;
+    position: fixed;
+    
+}
+
+nav ul{
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+
+}
+
+
+nav li{
+    list-style: none;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;   
+    transition: .5s;
+
+}
+
+nav a:hover{
+    
+    color: #4299FA;
+    border-bottom: 1px solid #ffffff;
+    
+
+}
+
+
+  
+ 
+ 
+  
+#section-1{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(calculadora-cerca-papeleria-forma-geometrica.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center ;
+
+   
+   
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+ width: 100%;
+    position: relative;
+    margin: auto;
+    border-radius: 10px;
+    
+}
+
+.container img{
+    
+    height: 500px;
+    
+}
+
+
+.pizarra{
+    
+    display: flex;
+    
+   flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    background-image: url(pizarra-colegio.jpg);
+    background-size: cover;
+    height: 62%;
+   
+    width: 50%;
+}
+
+
+.cartel h1{
+    color:#fafdff;
+    font-weight: 900;
+    font-size: 28px;
+    position: absolute;
+    left: 11.5%;
+    top: 24%;
+   
+    transform: rotate(-5deg);
+    text-shadow: 4px 4px 9px rgba(0,0,0,0.6);
+    display: block;
+   
+    
+    
+}
+
+.cartel p{
+   position: absolute;
+    width: 170px;
+    height: 20%;
+    top: 18%;
+    left: 11%;
+   
+  
+    font-size: 18px;
+    text-align: center;
+    transform: rotate(-5deg);
+    font-weight: bold;
+    color:#183711;
+    font-family: 'Darumadrop One', cursive;
+    text-shadow: 4px 4px 9px rgba(4, 255, 0, 0.6);
+    transition: .5s;
+    display: none;
+    
+}
+
+.cartel h1 span{
+    color: #39b91c;
+    text-shadow: 4px 4px 9px rgba(12, 255, 49, 0.6);
+    
+}
+
+
+.cartel img{
+    display: flex;
+    width: 90%;
+    position: relative;
+    height: 80%;
+    left: 0%;
+}
+
+
+.cartel .info__math{
+    color: #fff;
+    background-color: #39b91c;
+    border: 2px solid white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px ;
+    font-family: poppins;
+    position: absolute;
+    top: 42.7%;
+    left: 16%;
+    transform:  rotate(-5deg) ;
+    
+}
+
+#ocultar_info{
+    position: absolute;
+    top: 42.7%;
+    left: 16%;
+    display: none;
+}
+
+.cartel .info__math:hover{
+    background-color: #183711;
+    transform: scale(110%) rotate(-5deg) ;
+    transition: .6s;
+
+}
+
+
+.pizarra h3{
+    color: #ffffff;
+    
+    margin: 0%;
+    letter-spacing: 1px;
+    font-size: 70px;
+    transition: .5s;
+   
+    
+}
+
+
+
+.pizarra h2{
+   
+    color: #39b91c;
+    margin: 0%;
+    font-size: 30px;
+    font-family: 'Darumadrop One', cursive;
+    letter-spacing: 1px;
+    transition: .5s;
+    
+}
+
+.pizarra h2:hover{
+    transform: scale(125%);
+    transition: 1s ease-in-out;
+}
+
+.item__a:active{
+    color: #4299FA;
+
+}
+
+
+.pizarra p{
+    margin: 0%;
+    
+    color: #39b91c;
+    
+    font-size: 30px;
+    font-family: 'Darumadrop One', cursive;
+    letter-spacing: 1px;
+    transition: .5s;
+}
+
+.pizarra p:hover{
+    transform: scale(120%);
+    transition: 1s ease-in-out;
+}
+
+
+#section-2{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url(escritorio-escuela-libros-texto-cerca-pizarra.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+
+
+.loading-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    animation: loading-text 1.5s ease-in-out infinite;
+  }
+  
+  .loading-text:before,
+  .loading-text:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    background-color: #6dd23e;
+    animation: loading-bars 1.5s ease-in-out infinite;
+  }
+  
+  .loading-text:before {
+    transform: translateY(-10px);
+  }
+  
+  .loading-text:after {
+    transform: translateY(10px);
+  }
+  
+  @keyframes loading-text {
+    0% {
+      color: #fff;
+    }
+    50% {
+      color: #6dd23e;
+    }
+    100% {
+      color: #fff;
+    }
+  }
+  
+  @keyframes loading-bars {
+    0% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(2, 1);
+    }
+    50% {
+      transform: scale(1, 1);
+    }
+    75% {
+      transform: scale(1, 2);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+ 
+#info__jerarquia{
+    display: none;
+    flex-direction: column;
+    position: relative;
+    justify-content: start;
+    text-align: center;
+    left: 0px;
+   width: 90%;
+   
+}
+  #info__jerarquia span{
+    font-family: poppins;
+
+    font-weight: bold;
+    color: #abf;
+    
+  }
+  #info__jerarquia p{
+    font-size: 25px;
+    top: 0px;
+  }
+
+
+
+ 
+
+  .titulo__jerarquia img{
+    height: 100px;
+  }
+
+  .titulo__jerarquia button{
+    display: flex;
+    background-color: #50a2ff;
+    width: 400px;
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    transition: .5s;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(0%);
+    
+  }
+
+ .titulo__jerarquia button:hover{
+    background-color: #124783;
+   
+ }
+
+ .titulo__jerarquia h1{
+    text-shadow: 4px 4px 9px rgba(0,0,0,0.6);
+ }
+
+
+
+ #toca__aqui{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    
+   
+    font-family: poppins;
+    position: relative;
+    top: 130px;
+ }
+#toca__aqui h4{
+    font-weight: bold;
+    padding-bottom: 0%;
+    position: relative;
+    top: 0px;
+    
+
+}
+ #toca__aqui img{
+    height: 30px;
+    margin-top: 0;
+    padding: 0;
+    position: absolute;
+    top: 220px;
+    animation: flecha 2s ease-in-out infinite;
+ }
+
+ @keyframes flecha {
+    0%{
+        transform: translateY(0);
+       
+    }50%{
+        transform: translateY(-50%);
+       
+    }
+    100%{
+        transform: translateY(0%);
+    }
+ }
+
+ .btn__jerarquia{
+    display: none;
+    background-color: #50a2ff ;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    font-family: darumadrop;
+    font-weight: bold;
+    transition: .5s;
+    position: absolute;
+    top: 100px;
+    padding: 5px;
+    border-radius: 10px;
+ }
+
+
+
+ .btn__jerarquia:hover{
+    background-color: #124783;
+ }
+
+ #btn__ocultarJerarquia{
+    top: 20em;
+    width: 100px;
+    justify-content: center;
+    position: relative;
+ }
+.ejercicios__jerarquia{
+   
+    position: absolute;
+    background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 450px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    width: 90%;
+    height: 200px;
+    align-items: start;
+}
+#ejercicios__jerarquia{
+    display: none;
+}
+ .img__einsteinEjercicios{
+   display: flex;
+   position: absolute;
+   top: 0px;
+
+   left: 0;
+    height: 150px;
+    padding-left: 10px;
+
+    
+ }
+
+ .ejerciciosJerarquiaDificiles{
+    display: none;
+    color: #fff;
+    justify-content: space-around;
+    width: 80%;
+   
+    margin-top: 90px;
+    margin-left: 150px;
+ }
+
+ .ejerciciosJerarquiaDificiles h4{
+    color: #fff;
+    font-size: 20px ;
+    font-family: darumadrop;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+   background-color: #124783;
+ }
+
+ .ejerciciosJerarquia{
+    color: #fff;
+    justify-content: space-around;
+    width: 80%;
+    display: flex;
+    margin-top: 90px;
+    margin-left: 150px;
+ }
+
+ .ejerciciosJerarquia h4{
+    color: #fff;
+    font-size: 20px ;
+    font-family: darumadrop;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+   background-color: #124783;
+ }
+ .tituloEjerciciosJerarquia{
+    position: absolute;
+    left: 27%;
+    width: 100%;
+    height: 30px;
+   margin: 0%;
+   padding: 0%;
+    justify-content: center;
+    align-items: flex-start;
+ }
+
+ .tituloEjerciciosJerarquia h1{
+    text-shadow: 4px 4px 9px rgba(0,0,0,0.6);
+ }
+
+ .btns__jerarquia{
+    display: flex;
+    background-color: #124783;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 150px;
+    position: absolute;
+    top: 155px;
+    font-family: poppins;
+    border-radius: 10px;
+    left: 20px;
+    transition: .5s;
+ }
+
+ #ejerciciosFaciles:hover{
+    background-color: #4299FA;
+    transform: scale(70%);
+ }
+
+ #ejerciciosDificiles:hover{
+    background-color: #4299FA;
+    transform: scale(70%);
+ }
+
+#ejerciciosFaciles{
+    display: flex;
+}
+
+#ejerciciosDificiles{
+    display: none;
+}
+
+ 
+
+#section-5{
+    width: 100%;
+    height: 100vh;
+    background-image: url(pizarra.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btns__fracciones{
+    display: flex;
+   width: 800px;
+   height: 100px;
+   top: 350px;
+   position: relative;
+   margin: auto;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.btn__fraccion{
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #50a2ff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-family: poppins;
+    text-shadow: 4px 4px 9px rgba(0,0,0,0.6);
+    transition: .5s;
+
+}
+
+.btn__fraccion:hover{
+    background-color: #124783;
+}
+.btns__fracciones img{
+    height: 100px;
+    padding: 10px;
+}
+
+#btn__fraccion2{
+    display: none;
+}
+
+
+
+.btn__cambio1 {
+   
+    
+    color: #fff;
+    font-size: 20px;
+    top: 200px;
+    left: 200px;
+    display: flex;
+    position: relative;
+    top: 31%;
+    left: 34%;
+}
+
+
+.btn__cambio2 {
+   
+    left: 450px;
+    color: #fff;
+    font-size: 20px;
+    top: 200px;
+    left: 200px;
+}
+
+.infoFracciones{
+    width: 100%;
+    display: none;
+    justify-content: center;
+    position: relative;
+    margin-top: 10%;
+    transition: 1s;
+
+}
+
+.infoFracciones p{
+    color: #fff;
+    width: 80%;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 30px;
+}
+
+.infoFracciones p span{
+    color: #4299FA;
+}
+.ejerciciosFracciones{
+    display: none;
+    align-items: center;
+    position: relative;
+    top: 13%;
+    width: 90%;
+    left: 100px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    height: 150px;
+   background-image: url(fondo.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+    
+}
+
+
+.ejerciciosFraccionesDificiles{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  
+  position: absolute;
+  margin-right: 40%;
+  width: 1000px;
+  top: 8%;
+  left: 250px;
+ 
+}
+
+.btn__ocultarFracciones{
+    display: flex;
+    z-index: 5000;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn__ocultarFracciones button{
+    color: #fff;
+    background-color: #4299FA;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    font-size: 14px;
+    padding: 3px;
+    transition: .5s;
+    position: relative;
+    text-align: center;
+   left: 520px;
+
+}
+.btn__mostrarFracciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn__mostrarFracciones button{
+    color: #fff;
+    background-color: #4299FA;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    font-size: 14px;
+    padding: 3px;
+    transition: .5s;
+    position: absolute;
+    text-align: center;
+   right: 38px;
+
+}
+
+
+.btn__ocultarFracciones button:hover{
+    background-color: #124783;
+}
+.btn__mostrarFracciones button:hover{
+    background-color: #000000;
+}
+.ejerciciosFraccionesDificiles h4{
+    background-color: #124783;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+   padding: 10px;
+   margin: 50px;
+   
+    height:  20%;
+}
+.ejerciciosFracciones img{
+   height: 120px;
+   left: 150px;
+    }
+
+.ejerciciosFraccionales{
+   display: flex;
+   position: absolute;
+   left: 150px;
+   top: 30px;
+
+}
+
+
+.ejerciciosFraccionales h4{
+    color: #fff;
+    font-size: 20px ;
+    font-family: darumadrop;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+   background-color: #124783;
+   margin: 40px;
+
+}
+   
+ .ejerciciosFracciones h1{
+        color: #fff;
+        position: relative;
+        top: -50px;
+        font-size: 25px;
+        left: 50%;
+        text-shadow: 4px 4px 9px rgba(0,0,0,0.6);
+}
+
+#btn__ocultarFraccion{
+   background-color: #4299FA;
+    color: #fff;
+    text-shadow: 4px 4px 9px rgba(0,0,0,0.6);
+    border: 1px solid #fff;
+    width: 120px;
+    font-family: poppins;
+    border-radius: 5px;
+   
+    
+    height: 30px;
+    
+    transition: .6s;
+     display: none;
+    justify-content: center;
+  
+    align-items: center;
+   position: relative;
+   margin: auto;
+  
+
+
+}
+
+#btn__ocultarFraccion:hover{
+    background-color: #124783;
+    
+}
+
+#btn_mostrarFraccion{
+    width: 50px;
+    display: flex;
+    animation: flecha 2s ease-in-out infinite;
+    height: 100px;
+    position: relative;
+    margin: auto;
+    top: 420px;
+}
+#btn_mostrarFraccion img{
+    height: 30px;
+}
+
+@media (max-width: 800px){
+    .pizarra{
+
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-size: cover;
+        padding: 3%;
+      
+    }
+
+    
+    .pizarra p{
+        font-size: 1.5em;
+    }
+
+    .pizarra h2{
+        font-size: 1.5em;
+    }
+    
+    .pizarra h3{
+        font-size: 3em;
+    }
+  
+    .logooo h1{
+        font-size: 20px;
+        margin: auto;
+        padding: 10px;
+    }
+  
+    .cartel{
+        display: none;
+    }
+
+    .item__a{
+        font-size: 18px;
+    }
+
+    #section-1{
+        height: 100vh;
+    }
+
+    #section-3{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container_s3{
+        left: 0%;
+        width: 80%;
+        height: 80vh;
+        top: 10%;
+        display: flex;
+        grid-template-rows: 1fr 600px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 150px 150px;
+    }
+    
+
+    #titulo-opciones h1{
+        font-size: 30px;
+        position: relative;
+        top: -1em;
+        margin-left: -1em;
+    
+    }
+
+    .item__div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+        flex-direction: column;
+        border: 2px solid #fff;
+        margin: 75px;
+        height: 80px;
+        width: 80px;
+        top: 50px;
+    }
+    .item{
+        height: 70px;
+        margin: 0px;
+        width: 70px;
+    }
+   .item__div h4{
+    font-size: 12px;
+   }
+
+    #jo{
+        transform: translateY(2.5em) translateX(-1em);
+    }
+    #f{
+        transform: translateY(2.5em) translateX(-.5em);
+    }
+    #o{
+        transform: translateY(15.6em) translateX(-1em);
+    
+    }
+    #brain__h4{
+        transform: translateY(15.6em) translateX(3em);
+
+    }
+    
+
+    
+    .ejercicios__jerarquia{
+        height: 100px;
+        position: relative;
+     
+    }
+   
+    #btn__ocultarJerarquia{
+        top: 0px;
+    }
+   
+
+    #info__jerarquia p{
+        font-size: 16px;
+    }
+  
+
+    #ejercicios__jerarquia{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50px;
+    }
+   
+    .img__einsteinEjercicios{
+        display: none;
+    }
+   .tituloEjerciciosJerarquia{
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    display: flex;
+    left: 0%;
+    top: 0%;
+
+   }
+   .ejerciciosJerarquia h4{
+    font-size: 14px;
+    position: relative;
+    left: -5.5em;
+    top: -1em;
+    
+    padding: 4px;
+   }
+
+   #dificilesJerarquia h4{
+    font-size: 12px;
+    padding: 5px;
+    height: 30px;
+    position: relative;
+    right: 6em;
+    width: 20em;
+    bottom: 20px;
+    
+   }
+
+  .btns__jerarquia {
+    display: flex;
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    transform: translateX(
+        -50%
+    );
+    top: 9em;
+  }
+  
+  .btns__jerarquia:hover{
+    transform: scale(0%);
+
+    transform: translateY(0%), translateX(0%);
+  }
+  
+
+  .container{
+    display: flex;
+    justify-content: center;
+   
+   
+    position: relative;
+    margin: auto;
+   
+    align-items: center;
+  }
+
+}

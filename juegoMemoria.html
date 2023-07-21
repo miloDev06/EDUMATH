@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Memoria</title>
+	<link rel="stylesheet" href="juegoMemoria.css">
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Josefin+Sans:wght@600&family=Poppins:wght@900&family=Raleway:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="mate.png" alt="">
+            <h1>EDUMATH</h1>
+        </div>
+        <div class="back">
+            <a href="index.html">Inicio</a>
+        </div>
+    </nav>
+  
+	
+
+	<div class="container">
+
+      
+       
+
+		<div id="pantalla-inicio">
+			<h1>JUEGO <br> DE <br> MEMORIA</h1> <br>
+			<img src="mate.png">
+			<button class="boton" onclick="jugar()">JUGAR</button>
+		</div>
+
+		<div id="pantalla-juego">
+			<h1 id="texto">MEMORIZA LA SECUENCIA</h1>
+			<h2 id="resultado"> </h2>
+			<div class="fila">
+				<span class="num" onclick="comparar(this)">0</span>
+				<span class="num" onclick="comparar(this)">1</span>
+				<span class="num" onclick="comparar(this)">2</span>
+			</div>
+			<div class="fila">
+				<span class="num" onclick="comparar(this)">3</span>
+				<span class="num" onclick="comparar(this)">4</span>
+				<span class="num" onclick="comparar(this)">5</span>
+			</div>
+			<div class="fila">
+				<span class="num" onclick="comparar(this)">6</span>
+				<span class="num" onclick="comparar(this)">7</span>
+				<span class="num" onclick="comparar(this)">8</span>
+			</div>
+			<div class="fila">
+				<span class="num" onclick="comparar(this)">9</span>
+			</div>		
+		</div>
+		
+		<div id="pantalla-fin">
+			<p>Lograste memorizar <span id="digitos"> 8 <br> <br> </span>dígitos</p>
+			<button class="boton" id="btn__jugarNuevamente" onclick="jugar()"> JUGAR DE NUEVO</button>
+		</div>
+	</div>
+	<script src="juegoMemoria.js"></script>
+</body>
+</html>

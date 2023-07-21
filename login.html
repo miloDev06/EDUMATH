@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <script src="login.js"></script>
+    <div id="login" class="iniciarSesion">
+
+        <form class="login">
+           <img src="calculadora.png" alt="">
+           <div class="correoInput">
+              <img class="iconoUsuario" src="user.png" alt=""> <input id="username" class="loginInput" type="text"
+                 placeholder="Nombre De Usuario" required>
+           </div>
+           <div class="contraseñaInput">
+              <img src="bloqueado.png" alt="">
+              <input class="loginInput" type="password" id="password" placeholder="Contraseña" required>
+           </div>
+
+           <button  type="submit" onclick="getValueInput(); iniciarSesion();" onclick>INICIAR SESION</button>
+           <hr>
+            <button  onclick="mostrarRegister();" class="a"> Crear nueva cuenta </button>
+
+        </form>
+
+     </div>
+
+
+
+     <form id="register" class="form-register">
+        <h4>Registrate </h4>
+          
+        
+           <input class="controls" type="text" name="nombres" id="nombres" placeholder= "Nombre">
+          <input class="controls" type="text" name="apellidos" id="apellidos" placeholder= "Apellido">
+          <input class="controls" type="email" name="correo" id="correo" placeholder="Correo">
+          <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+          <button type="submit" class="botons" >REGISTRARSE</button>
+           <hr>
+           
+           
+         <button   onclick="mostrarLogin();" id="a">¿Ya tengo Cuenta?</button>
+
+     </form>
+</body>
+</html>
