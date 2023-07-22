@@ -119,6 +119,29 @@ const ocultarFracciones = () => {
 }
 
 
+function mostrarFraccionResponsive() {
+    let tituloResponsive = document.getElementById("tittleResponsive");
+    let infoResponsive = document.getElementById("parrafoResponsive");
+    let ejercicioResponsive = document.getElementById("ejerciciosResponsive");
+    let boton = document.getElementById("btnFraccionResponsive");
+
+    tituloResponsive.style.transform="translateY(-50%)";
+    infoResponsive.style.display="flex";
+    ejercicioResponsive.style.display="flex";
+    boton.style.display="flex";
+}
+function ocultarFraccionResponsive() {
+    let tituloResponsive = document.getElementById("tittleResponsive");
+    let infoResponsive = document.getElementById("parrafoResponsive");
+    let ejercicioResponsive = document.getElementById("ejerciciosResponsive");
+    let boton = document.getElementById("btnFraccionResponsive");
+
+    tituloResponsive.style.transform="translateY(0%)";
+    infoResponsive.style.display="none";
+    ejercicioResponsive.style.display="none";
+    boton.style.display="none";
+}
+
 
 
 

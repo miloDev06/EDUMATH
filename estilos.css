@@ -15,6 +15,10 @@ body {
 }
 
 
+.container__fraccionesResponsive{
+    display: none;
+}
+
 .nav {
     background-color: #0f2b5f;
     width: 96%;
@@ -1387,7 +1391,19 @@ f
 }
 
 
+
+
+
+
+
+
+
+
+
+@media (min-width: 750px) and (max-width: 1500px){
 /* TODO LO RESPONSIVE APARTIR DE AQUI */
+
+
 
 .container__fraccionesResponsive{
     height: 100%;
@@ -1402,28 +1418,36 @@ f
     display: flex;
     background-color: #0077ff;
     border: 3px solid #fff;
-    width: 50%;
+    width: 60%;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
     position: relative;
-    margin: 10% auto;
+    margin: auto;
+    top: 10%;
+    transition: .5s;
    
 }
 
+.tittle__responsive:hover{
+    background-color: #0f2b5f;
+    transform: scale(110%);
+}
+
 .tittle__responsive img{
-    height: 80px;
-    width: 80px;
+    height: 100px;
+    width: 100px;
+   
 }
 
 .tittle__responsive h1{
     color: #fff;
-    font-size: 16px;
+    font-size: 2.2em;
 }
 
 .infoFraccionesResponsive{
    
-    display: flex;
+    display: none;
     width: 75%;
     position: relative;
     margin: 0% auto;
@@ -1435,11 +1459,14 @@ f
     color: #fff;
     font-family: 'Darumadrop One', cursive;
     font-size: 30px;
-    margin-bottom: 5%;
+    margin: 0% 0% 10% 0%;
+    font-size: 2.2em;
+    position: relative;
+    top: -5%;
 }
 
 .ejerciciosResponsive{
-    display: flex;
+    display: none;
     flex-direction: column;
     background-color: #0077ff;
     border: 3px solid #fff;
@@ -1483,8 +1510,11 @@ f
 }
 
 .btnFraccionResponsive{
+    display: none;
     position: relative;
-    margin: 5% auto;
+    margin: 10% auto;
+    top: 10px;
+    z-index: 500;
 
 }
 
@@ -1492,7 +1522,13 @@ f
     background-color: #0077ff;
     color: #fafdff;
     border-radius: 10px;
+    
     padding: 7px;
     font-family: poppins;
     font-size: 30px;
+    border: 2px solid #fff;
+    z-index: 500;
+    
+}
+
 }
