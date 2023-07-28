@@ -45,11 +45,12 @@ function ocultarInfo (){
 
 
 function mostrarJerarquia(){
+    
     document.getElementById("info__jerarquia").style.display="flex";
     document.getElementById("toca__aqui").style.display="none";
     document.getElementById("btn__jerarquia").style.display="none";
     document.getElementById("btn__ocultarJerarquia").style.display="flex";
-    document.getElementById("ejercicios__jerarquia").style.display="flex";
+    document.querySelector(".contenedorEjerciciosJerarquia").style.display="flex";
 }
 
 function ocultarJerarquia(){
@@ -57,7 +58,7 @@ function ocultarJerarquia(){
     document.getElementById("toca__aqui").style.display="flex";
     document.getElementById("btn__jerarquia").style.display="flex";
     document.getElementById("btn__ocultarJerarquia").style.display="none";
-    document.getElementById("ejercicios__jerarquia").style.display="none";
+    document.querySelector(".contenedorEjerciciosJerarquia").style.display="none";
 }
     
 
@@ -208,6 +209,179 @@ function generarEc (){
    
 }
 
+
+
+
+function generarJe(){
+    let num1 = document.getElementById("numA");
+    let operacion1 = document.getElementById("operando1");
+    let num2 = document.getElementById("numB");
+    let operacion2 = document.getElementById("operando2");
+    let num3 = document.getElementById("numC");
+    let operacion3 = document.getElementById("operando3");
+    let num4 = document.getElementById("numD");
+   
+   let valor1 =  parseInt(Math.round(Math.random(1, 10)*9 +1));
+   let op1 = parseInt(Math.round(Math.random(1, 10)*3 ));
+     if (op1 == 0){
+        operacion1.innerHTML="+";
+     }else if(op1 == 1){
+        operacion1.innerHTML="-";
+     } else if(op1 == 2){
+        operacion1.innerHTML="*"
+     } else if (op1 == 3){
+        operacion1.innerHTML="/"
+     }
+    
+     num1.innerHTML=valor1;
+
+   let valor2 =  parseInt(Math.round(Math.random(1, 10)*9 +1));
+   let op2 = parseInt(Math.round(Math.random(1, 10)*3 ));
+     if (op2 == 0){
+        operacion2.innerHTML="+";
+     }else if(op2 == 1){
+        operacion2.innerHTML="-";
+     } else if(op2 == 2){
+        operacion2.innerHTML="*"
+     } else if (op2 == 3){
+        operacion2.innerHTML="/"
+     }
+     num2.innerHTML=valor2;
+
+   let valor3 =  parseInt(Math.round(Math.random(1, 10)*9 +1));
+   let op3 = parseInt( Math.round(Math.random(1, 10)*3 ));
+     if (op3 == 0){
+        operacion3.innerHTML="+";
+     }else if(op3 == 1){
+        operacion3.innerHTML="-";
+     } else if(op3 == 2){
+        operacion3.innerHTML="*"
+     } else if (op3 == 3){
+        operacion3.innerHTML="/"
+     }
+
+     num3.innerHTML=valor3;
+     
+     let valor4 =  parseInt(Math.round(Math.random(1, 10)*9 +1));
+     
+       num4.innerHTML=valor4;
+   
+
+/* aaaaa */
+
+
+    let num12 = document.getElementById("numA2");
+    let operacion12 = document.getElementById("operando12");
+    let num22 = document.getElementById("numB2");
+    let operacion22 = document.getElementById("operando22");
+    let num32 = document.getElementById("numC2");
+    let operacion32 = document.getElementById("operando32");
+    let num42 = document.getElementById("numD2");
+   
+   let valor12 =  parseInt(Math.round(Math.random(1, 10)*9 +1));
+   let op12 = parseInt(Math.round(Math.random(1, 10)*3 ));
+     if (op12 == 0){
+        operacion12.innerHTML="+";
+     }else if(op12 == 1){
+        operacion12.innerHTML="-";
+     } else if(op12 == 2){
+        operacion12.innerHTML="*"
+     } else if (op12 == 3){
+        operacion12.innerHTML="/"
+     }
+    
+     num1.innerHTML=valor12;
+
+   let valor22 =  parseInt(Math.round(Math.random(1, 10)*9 +1));
+   let op22 = parseInt(Math.round(Math.random(1, 10)*3 ));
+     if (op22 == 0){
+        operacion22.innerHTML="+";
+     }else if(op22 == 1){
+        operacion22.innerHTML="-";
+     } else if(op22 == 2){
+        operacion22.innerHTML="*"
+     } else if (op22 == 3){
+        operacion22.innerHTML="/"
+     }
+     num22.innerHTML=valor22;
+
+   let valor32 =  parseInt(Math.round(Math.random(1, 10)*9 +1));
+   let op32 = parseInt( Math.round(Math.random(1, 10)*3 ));
+     if (op32 == 0){
+        operacion32.innerHTML="+";
+     }else if(op32 == 1){
+        operacion32.innerHTML="-";
+     } else if(op32 == 2){
+        operacion32.innerHTML="*"
+     } else if (op32 == 3){
+        operacion32.innerHTML="/"
+     }
+
+     num32.innerHTML=valor32;
+     
+     let valor42 =  parseInt(Math.round(Math.random(1, 10)*9 +1));
+     
+       num42.innerHTML=valor42;
+   
+
+/* aaaaa */
+/*ultimate*/
+    let num13 = document.getElementById("numA3");
+    let operacion13 = document.getElementById("operando13");
+    let num23 = document.getElementById("numB3");
+    let operacion23 = document.getElementById("operando23");
+    let num33 = document.getElementById("numC3");
+    let operacion33 = document.getElementById("operando33");
+    let num43 = document.getElementById("numD3");
+   
+   let valor13 =  parseInt(Math.round(Math.random(1, 10)*9 +1));
+   let op13 = parseInt(Math.round(Math.random(1, 10)*3 ));
+     if (op13 == 0){
+        operacion13.innerHTML="+";
+     }else if(op13 == 1){
+        operacion13.innerHTML="-";
+     } else if(op12 == 2){
+        operacion13.innerHTML="*"
+     } else if (op13 == 3){
+        operacion13.innerHTML="/"
+     }
+    
+     num13.innerHTML=valor13;
+
+   let valor23 =  parseInt(Math.round(Math.random(1, 10)*9 +1));
+   let op23 = parseInt(Math.round(Math.random(1, 10)*3 ));
+     if (op23 == 0){
+        operacion23.innerHTML="+";
+     }else if(op23 == 1){
+        operacion23.innerHTML="-";
+     } else if(op23 == 2){
+        operacion23.innerHTML="*"
+     } else if (op23 == 3){
+        operacion23.innerHTML="/"
+     }
+     num23.innerHTML=valor23;
+
+   let valor33 =  parseInt(Math.round(Math.random(1, 10)*9 +1));
+   let op33 = parseInt( Math.round(Math.random(1, 10)*3 ));
+     if (op33 == 0){
+        operacion33.innerHTML="+";
+     }else if(op33 == 1){
+        operacion32.innerHTML="-";
+     } else if(op33 == 2){
+        operacion32.innerHTML="*"
+     } else if (op33 == 3){
+        operacion33.innerHTML="/"
+     }
+
+     num33.innerHTML=valor33;
+     
+     let valor43 =  parseInt(Math.round(Math.random(1, 10)*9 +1));
+     
+       num43.innerHTML=valor43;
+   
+
+/* aaaaa */
+}
 
 
 
