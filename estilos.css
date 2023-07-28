@@ -15,9 +15,7 @@ body {
 }
 
 
-.container__fraccionesResponsive{
-    display: none;
-}
+
 
 .nav {
     background-color: #0f2b5f;
@@ -61,6 +59,7 @@ hr {
     background-image: url(pizarra.png);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
 }
 
 .items {
@@ -503,7 +502,7 @@ hr {
     content: "";
     position: absolute;
     height: 2px;
-    width: 100%;
+    width: 90%;
     top: 50%;
     left: 0;
     background-color: #6dd23e;
@@ -1122,15 +1121,17 @@ hr {
 
         display: flex;
         justify-content: center;
-        width: 100%;
-        background-size: cover;
-        padding: 3%;
+      
+        width: 90%;
+       
+        
+      
 
     }
 
 
     .pizarra p {
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 
     .pizarra h2 {
@@ -1197,8 +1198,7 @@ hr {
     #titulo-opciones h1 {
         font-size: 30px;
         position: relative;
-        top: -1em;
-        margin-left: -1em;
+        
 
     }
 
@@ -1246,11 +1246,6 @@ hr {
 
 
 
-    .ejercicios__jerarquia {
-        height: 100px;
-        position: relative;
-
-    }
 
     #btn__ocultarJerarquia {
         top: 0px;
@@ -1262,63 +1257,9 @@ hr {
     }
 
 
-    #ejercicios__jerarquia {
-        position: relative;
-        display: none;
-        justify-content: center;
-        align-items: center;
-        top: 50px;
-    }
+   
 
-    .img__einsteinEjercicios {
-        display: none;
-    }
-
-    .tituloEjerciciosJerarquia {
-        justify-content: center;
-        align-items: center;
-        font-size: 8px;
-        display: flex;
-        width: 100%;
-        left: 0%;
-        top: 0%;
-
-    }
-
-    .ejerciciosJerarquia h4 {
-        font-size: 14px;
-        position: relative;
-        left: -5.5em;
-        top: -1em;
-
-        padding: 4px;
-    }
-
-    #dificilesJerarquia h4 {
-        font-size: 12px;
-        padding: 5px;
-        height: 30px;
-        position: relative;
-        right: 6em;
-        width: 20em;
-        bottom: 20px;
-
-    }
-
-    .btns__jerarquia {
-        display: flex;
-        position: absolute;
-        margin: auto;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 9em;
-    }
-
-    .btns__jerarquia:hover {
-        transform: scale(0%);
-
-        transform: translateY(0%), translateX(0%);
-    }
+   
 
 
     .container {
@@ -1352,7 +1293,7 @@ f
     }
 
     .container__fracciones{
-        display: none;
+        display: flex;
     }
 
     #ejerciciosFracciones {
@@ -1367,7 +1308,7 @@ f
     }
 
     #ejerciciosFracciones img {
-        display: none;
+        display: flex;
     }
 
     #fracc__fac h4 {
@@ -1379,6 +1320,10 @@ f
     #fracc__h4 button {
         height: 10px;
     }
+
+  
+
+   
 }
 
 
@@ -1394,133 +1339,7 @@ f
 @media (min-width: 300px) and (max-width: 1500px){
 /* TODO LO RESPONSIVE APARTIR DE AQUI */
 
-
-
-.container__fraccionesResponsive{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    
-}
-
-
-.tittle__responsive{
-    display: flex;
-    background-color: #0077ff;
-    border: 3px solid #fff;
-    width: 60%;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin: auto;
-    top: 10%;
-    transition: .5s;
-   
-}
-
-.tittle__responsive:hover{
-    background-color: #0f2b5f;
-    transform: scale(110%);
-}
-
-.tittle__responsive img{
-    height: 100px;
-    width: 100px;
-   
-}
-
-.tittle__responsive h1{
-    color: #fff;
-    font-size: 2.2em;
-}
-
-.infoFraccionesResponsive{
-   
-    display: none;
-    width: 75%;
-    position: relative;
-    margin: 0% auto;
-    top: 5%;
-    bottom: 5%;
-}
-
-.infoFraccionesResponsive p{
-    color: #fff;
-    font-family: 'Darumadrop One', cursive;
-    font-size: 30px;
-    margin: 0% 0% 10% 0%;
-    font-size: 2.2em;
-    position: relative;
-    top: -5%;
-}
-
-.ejerciciosResponsive{
-    display: none;
-    flex-direction: column;
-    background-color: #0077ff;
-    border: 3px solid #fff;
-    border-radius: 10px;
-    margin: 5% auto;
-    position: relative;
-
-}
-
-.tituloEjerciciosFraccionesResponsive{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    top: 90%;
-}
-.tituloEjerciciosFraccionesResponsive h1{
-    color: #fff;
-    font-size: 30px;
-    padding: 10px;
-}
-
-.ejerciciosFraccionesResponsive {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: auto;
-    position: relative;
-    width: 90%;
-}
-
-.ejerciciosFraccionesResponsive h4{
-    color: #fff;
-    background-color: #0f2b5f;
-    font-size: 20px;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    padding: 10px;
-    
-}
-
-.btnFraccionResponsive{
-    display: none;
-    position: relative;
-    margin: 10% auto;
-    top: 10px;
-    z-index: 500;
-
-}
-
-.btnFraccionResponsive button{
-    background-color: #0077ff;
-    color: #fafdff;
-    border-radius: 10px;
-    
-    padding: 7px;
-    font-family: poppins;
-    font-size: 30px;
-    border: 2px solid #fff;
-    z-index: 500;
-    
-}
+  
 
 }
 
@@ -1553,7 +1372,7 @@ f
     }
 
     #section-4{
-        width: 100%;
+        width: 100vw;
     }
 
    
@@ -1562,53 +1381,200 @@ f
         font-size: 16px;
     }
 
-    .tittle__responsive{
-        height: 70px;
-        justify-content: center;
-        border-radius: 4px;
-        background-color: #50a2ff;
-    }
-
-    .tittle__responsive img{
-        height: 40px;
-        width: 40px;
-        margin: 20px;
-    }
-
-    .infoFraccionesResponsive {
-        font-size: 8px;
+    
+    .contenedorEjerciciosJerarquia{
+        width: 85%;
         margin-top: 10px;
     }
 
-    .btnFraccionResponsive button{
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        height: 30px;
-        width: 100px;
-        font-size: 16px;
-        
-    }
-
-    .tittle__responsive h1{
-        font-size: 14px;
-        text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.6);
-    }
-
-    .tituloEjerciciosFraccionesResponsive {
-        display: flex;
-
-    }
-
-    .tituloEjerciciosFraccionesResponsive h1 {
-        font-size: 16px;
-        text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.6);
-    }
-    .ejerciciosFraccionesResponsive h4 {
+    .tituloDeEjerciciosJerarquia{
         font-size: 8px;
-        padding: 5px;
-        text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.6);
+        text-align: center;
     }
+
+    .imgDeEjerciciosJerarquia img{
+        height: 60px;
+    }
+
+    .ejerciciosFr h4{
+        font-size: 10px;
+        font-weight: 100;
+        padding: 4px;
+        border-radius: 6px;
+    }
+
+    .ejerciciosFr button{
+        padding: 4px;
+        font-size: 7px;
+        height: 30px;
+
+    }
+
+    #btn__fraccion1{
+        width: 80%;
+        height: 80%;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+
+    #btn__fraccion1 img{
+        height: 60px;
+    }
+
+   
+
+    .contenedorEjerciciosFracciones{
+        width: 85%;
+        margin-top: 10px;
+    }
+
+    .tituloDeEjerciciosFracciones{
+        font-size: 8px;
+        text-align: center;
+    }
+
+    .imgDeEjerciciosFracciones img{
+        height: 60px;
+    }
+
+    .ejerciciosJe h4{
+        font-size: 10px;
+        font-weight: 100;
+        padding: 4px;
+        border-radius: 6px;
+    }
+
+    .ejerciciosJe button{
+        padding: 4px;
+        font-size: 7px;
+        height: 30px;
+
+    }
+   
+
+    .infoFracciones p{
+        font-size: 16px;
+    }
+  
     
+    
+   
+    
+}
+
+.contentMateLectura {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    height: 60%;
+    box-shadow: 4px 3px 26px 0px rgba(170,187,255,1);
+-webkit-box-shadow: 4px 3px 26px 0px rgba(170,187,255,1);
+-moz-box-shadow: 4px 3px 26px 0px rgba(170,187,255,1);
+    border: 3px solid #fff;
+    border-radius: 10px;
+    background: linear-gradient(rgba(150, 150, 150, .5), rgba(150, 150, 150, .5));
+}
+
+.opciones{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.tituloOpciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50%;
+    width: 100%;
+}
+
+.tituloOpciones h1{
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 4px 3px 7px rgba(29,48,146,0.6);
+    background-color: #abf;
+    border-radius: 7px;
+    padding: 8px;
+    border: 3px solid #fff;
+    transition: .5s;
+    box-shadow: 4px 3px 26px 0px rgba(13,43,162,1);
+    -webkit-box-shadow: 4px 3px 26px 0px rgba(13,43,162,1);
+    -moz-box-shadow: 4px 3px 26px 0px rgba(13,43,162,1);
+}
+
+.tituloOpciones h1:hover{
+    background-color: rgb(80, 97, 168);
+}
+
+
+.opcion {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: .5s;
+    
+}
+.opcion img{
+    height: 70px;
+    border-radius: 7px;
+    background: rgb(130,153,255);
+background: linear-gradient(180deg, rgba(130,153,255,1) 0%, rgba(67,73,133,1) 100%);
+    padding: 10px;
+    border: 2px solid #fff;
+    transition: .5s;
+
+    box-shadow: 4px 3px 11px 0px rgba(255,255,255,0.75);
+-webkit-box-shadow: 4px 3px 11px 0px rgba(255,255,255,0.75);
+-moz-box-shadow: 4px 3px 11px 0px rgba(255,255,255,0.75);
+
+   
+}
+
+.opcion img:hover{
+    background: rgb(88,104,174);
+    transform: translateY(-20%);
+    box-shadow: 4px 3px 11px 0px rgba(5,21,139,0.75);
+    -webkit-box-shadow: 4px 3px 11px 0px rgba(5,21,139,0.75);
+    -moz-box-shadow: 4px 3px 11px 0px rgba(5,21,139,0.75);
+    transition: .5s;
+background: linear-gradient(180deg, rgba(88,104,174,1) 0%, rgba(32,41,131,1) 100%);
+}
+.opcion h1{
+    color: #fff;
+    font-size: 16px;
+    text-shadow: 4px 3px 7px rgba(29,48,146,0.6);
+}
+
+@media (max-width: 750px){
+    .contentMateLectura{
+        display: flex;
+        width: 85%;
+        height: 80%;
+        position: relative;
+        margin-top: 100px ;
+
+    }
+
+    .tituloOpciones {
+        height: 30%;
+    }
+
+    .tituloOpciones h1{
+        font-size: 16px;
+    }
+
+    .opciones{
+        display: grid;
+        grid-template-columns: 120px 120px;
+        height: 70%;
+        width: 100%;
+    }
+
+   
 }
