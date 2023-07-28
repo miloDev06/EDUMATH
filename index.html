@@ -137,33 +137,20 @@
             </p>
          </div>
 
-         <div id="ejercicios__jerarquia" class="ejercicios__jerarquia">
-            <div class="mostrarOcultarJerarquia"> <button class="btns__jerarquia" id="ejerciciosDificiles"
-                  onclick="verEjerciciosFaciles();">Ver ejercicios faciles</button> <button class="btns__jerarquia"
-                  id="ejerciciosFaciles" onclick="verEjerciciosDificiles();">Ver ejercicios mas dificiles</button>
-            </div>
-            <div class="tituloEjerciciosJerarquia">
-               <h1>Aqui tienes ejercicios para practicar!</h1>
-            </div>
-            <div class="img__einsteinEjercicios"><img src="einstein_basado-removebg-preview.png" alt=""></div>
-            <div id="facilesJerarquia" class="ejerciciosJerarquia">
-               <h4>3 * (5 - 3)</h4>
-               <h4>5 - (2 - 1)</h4>
-               <h4>3 + 6 * 2 </h4>
-               <h4>(3 + 4) - 2</h4>
-            </div>
-            <div id="dificilesJerarquia" class="ejerciciosJerarquiaDificiles">
-               <h4>32-19+40-20+30-50</h4>
-               <h4>60-40+108-104+320-133-45</h4>
-               <h4>150 ÷ (25 x 2) + 32 ÷ (8 x 2)</h4>
-            </div>
-         </div>
+
+        
+
+
+
+
 
          <div id="toca__aqui">
 
             <img src="https://cdn-icons-png.flaticon.com/512/892/892550.png" alt="">
 
          </div>
+
+
 
       </div>
    </div>
@@ -188,31 +175,30 @@
 
          <div><button id="btn__ocultarFraccion" onclick="ocultarInfoFracciones()">Ocultar</button></div>
 
-         <div id="ejerciciosFracciones" class="ejerciciosFracciones">
-            <img src="einstein_basado-removebg-preview.png" alt="">
-            <div class="tituloEjerciciosFraccione">
-               <h1> Aqui tienes algunos ejercicios para practicar !</h1>
-            </div>
-            <div id="fracc__fac" class="ejerciciosFraccionales">
-               <h4>15 / 3 + 15 / 3</h4>
-               <h4>81 / 9 - 25 / 9 </h4>
-               <h4>20 / 4 + 100 / 4</h4>
-               <h4>36 / 6 - 48 / 6</h4>
-               <h4>10 / 2 + 50 / 2</h4>
+         <div class="contenedorEjerciciosJerarquia">
 
-
+            <div class="imgDeEjerciciosJerarquia">
+               <img src="einstein_like-removebg-preview.png" alt="">
             </div>
 
-            <div id="fracc__dif" class="ejerciciosFraccionesDificiles">
-               <h4>3/4 - 2/4 - 1/4 - 8/4</h4>
-               <h4>2/3 + 3/4 + 5/6 </h4>
-               <h4>7/8 - 5/12 - 3/6 </h4>
-               <h4>1/2 + 2/5 + 3/4 + 1/10 </h4>
+            <div class="presentacionEjerciciosJerarquia">
+
+               <div class="tituloDeEjerciciosJerarquia">
+                  <h1>¡Aqui tienes ejercicios para practicar!</h1>
+               </div>
+
+
+               <div class="ejerciciosJe">
+                  <h4><span id="aa">8</span> / <span class="denominador1">2</span> <span id="operacion">+</span> <span
+                        id="bb">16</span> / <span class="denominador2">2</span></h4>
+                  <h4><span id="aa2">6</span> / <span class="denominador12">3</span> <span id="operacion2">-</span> <span
+                        id="bb2">12</span> / <span class="denominador22">3</span></h4>
+                  <h4><span id="aa3">18</span> / <span class="denominador13">6</span> <span id="operacion3">-</span> <span
+                        id="bb3">6</span> / <span class="denominador23">6</span></h4>
+                  <button class="btn_ejerciciosJerarquia" onclick=" generarEc ();">Ver mas ejercicios</button>
+               </div>
             </div>
-            <div class="btn__mostrarFracciones">
-               <button onclick="mostrarFracciones();" id="edfd">cambiar ejercicios</button>
-               <button onclick="ocultarFracciones();" id="edff">cambiar ejercicios</button>
-            </div>
+
          </div>
 
 
@@ -231,19 +217,21 @@
                denominador de la fracción resultante y sumamos los numeradores,<span> 7 + 10 = <strong> 17. </strong>
                </span> Por lo que el resultado de la fracción sería <span><strong> 17/10. </strong></span> </p>
          </div>
-          
+
          <div id="btnFraccionResponsive" class="btnFraccionResponsive">
-            <button  class="btn__responsive" onclick="ocultarFraccionResponsive() ;">Ocultar</button>
+            <button class="btn__responsive" onclick="ocultarFraccionResponsive() ;">Ocultar</button>
          </div>
 
          <div id="ejerciciosResponsive" class="ejerciciosResponsive">
-             <div class="tituloEjerciciosFraccionesResponsive"><h1>!Aqui tienes unos ejercicios para practicar!</h1></div>
-               <div class="ejerciciosFraccionesResponsive">
-                  <h4>15 / 3 + 15 / 3</h4>
-                  <h4>81 / 9 - 25 / 9 </h4>
-                  <h4>20 / 4 + 100 / 4</h4>
-                  <h4>36 / 6 - 48 / 6</h4>
-               </div>
+            <div class="tituloEjerciciosFraccionesResponsive">
+               <h1>!Aqui tienes unos ejercicios para practicar!</h1>
+            </div>
+            <div class="ejerciciosFraccionesResponsive">
+               <h4>15 / 3 + 15 / 3</h4>
+               <h4>81 / 9 - 25 / 9 </h4>
+               <h4>20 / 4 + 100 / 4</h4>
+               <h4>36 / 6 - 48 / 6</h4>
+            </div>
          </div>
 
       </div>

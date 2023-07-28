@@ -85,38 +85,24 @@ function verEjerciciosFaciles() {
 
 function mostrarInfoFracciones() {
     document.getElementById("btn__fraccion1").style.display="none";
-    document.getElementById("ejerciciosFracciones").style.display="flex";
+    
     document.getElementById("infoFraccionales").style.display="flex";
     document.getElementById("btn__ocultarFraccion").style.display="flex";
     document.getElementById("btn_mostrarFraccion").style.display="none";
+    document.querySelector(".contenedorEjerciciosJerarquia").style.display="flex";
 }
 
 function ocultarInfoFracciones() {
     document.getElementById("btn__fraccion1").style.display="flex";
-    document.getElementById("ejerciciosFracciones").style.display="none";
+   
     document.getElementById("infoFraccionales").style.display="none";
     document.getElementById("btn__ocultarFraccion").style.display="none";
     document.getElementById("btn_mostrarFraccion").style.display="flex";
+    document.querySelector(".contenedorEjerciciosJerarquia").style.display="none";
 }
 
 
-const mostrarFracciones = () => {
-    document.getElementById("fracc__dif").style.display="flex";
-    document.getElementById("fracc__fac").style.display="none";
-    document.getElementById("edfd").style.display="none";
-   document.getElementById("edff").style.display="flex";
-    
 
-}
-
-const ocultarFracciones = () => {
-    document.getElementById("fracc__dif").style.display="none";
-    document.getElementById("fracc__fac").style.display="flex";
-    document.getElementById("edfd").style.display="flex";
-   document.getElementById("edff").style.display="none";
-    
-
-}
 
 
 function mostrarFraccionResponsive() {
@@ -142,6 +128,85 @@ function ocultarFraccionResponsive() {
     boton.style.display="none";
 }
 
+
+function generarEc (){
+    let denominador = parseInt(Math.round(Math.random(1, 10)*3 +2));
+    let num1 = parseInt(Math.round(Math.random(1, 10)*15 +1));
+    let num2 = parseInt(Math.round(Math.random(1, 10)*15 +1));
+    let operando = parseInt(Math.round(Math.random(1, 10)*1 ));
+    
+
+    let x = document.getElementById("aa");
+    let y = document.getElementById("bb");
+
+    let den1 = document.querySelector(".denominador1");
+    let den2 = document.querySelector(".denominador2");
+    let operacion = document.getElementById("operacion");
+       if (operando == 0){
+        operacion.innerHTML="+"
+       } else {
+        operacion.innerHTML="-"
+       }
+
+       den1.innerHTML=denominador;
+       den2.innerHTML=denominador;
+
+       x.innerHTML=num1;
+       y.innerHTML=num2;
+
+
+    let denominador2 = parseInt(Math.round(Math.random(1, 10)*3 +2));
+    let num3 = parseInt(Math.round(Math.random(1, 10)*15 +1));
+    let num4 = parseInt(Math.round(Math.random(1, 10)*15 +1));
+    let operando2 = parseInt(Math.round(Math.random(1, 10)*1 ));
+    
+
+    let x2 = document.getElementById("aa2");
+    let y2 = document.getElementById("bb2");
+
+    let den3 = document.querySelector(".denominador12");
+    let den4 = document.querySelector(".denominador22");
+    let operacion2 = document.getElementById("operacion2");
+       if (operando2 == 0){
+        operacion2.innerHTML="+"
+       } else {
+        operacion2.innerHTML="-"
+       }
+
+       den3.innerHTML=denominador2;
+       den4.innerHTML=denominador2;
+
+       x2.innerHTML=num3;
+       y2.innerHTML=num4;
+
+
+    let denominador3 = parseInt(Math.round(Math.random(1, 10)*3 +2));
+    let num5 = parseInt(Math.round(Math.random(1, 10)*15 +1));
+    let num6 = parseInt(Math.round(Math.random(1, 10)*15 +1));
+    let operando3 = parseInt(Math.round(Math.random(1, 10)*1 ));
+    
+
+    let x3 = document.getElementById("aa3");
+    let y3 = document.getElementById("bb3");
+
+    let den5 = document.querySelector(".denominador13");
+    let den6 = document.querySelector(".denominador23");
+    let operacion3 = document.getElementById("operacion3");
+       if (operando == 0){
+        operacion3.innerHTML="+"
+       } else {
+        operacion3.innerHTML="-"
+       }
+
+       den5.innerHTML=denominador;
+       den6.innerHTML=denominador;
+
+       x3.innerHTML=num5;
+       y3.innerHTML=num6;
+
+
+   
+}
 
 
 
