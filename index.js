@@ -89,7 +89,7 @@ function mostrarInfoFracciones() {
     document.getElementById("infoFraccionales").style.display="flex";
     document.getElementById("btn__ocultarFraccion").style.display="flex";
     document.getElementById("btn_mostrarFraccion").style.display="none";
-    document.querySelector(".contenedorEjerciciosJerarquia").style.display="flex";
+    document.querySelector(".contenedorEjerciciosFracciones").style.display="flex";
 }
 
 function ocultarInfoFracciones() {
@@ -98,7 +98,7 @@ function ocultarInfoFracciones() {
     document.getElementById("infoFraccionales").style.display="none";
     document.getElementById("btn__ocultarFraccion").style.display="none";
     document.getElementById("btn_mostrarFraccion").style.display="flex";
-    document.querySelector(".contenedorEjerciciosJerarquia").style.display="none";
+    document.querySelector(".contenedorEjerciciosFracciones").style.display="none";
 }
 
 
@@ -207,6 +207,7 @@ function generarEc (){
 
    
 }
+
 
 
 
