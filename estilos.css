@@ -323,94 +323,155 @@ hr {
 
 .pizarra {
 
-    display: flex;
     
-
+    height: 100%;
+    width: 100%;
+    display:flex;
     flex-direction: column;
-    align-items: center;
+
     justify-content: center;
-
-    background-image: url(pizarra-colegio.jpg);
-    background-size: cover;
-    background-position-x: center;
-    height: 62%;
-
-    width: 50%;
+    
+    align-items: center;
 }
 
-
-.cartel h1 {
-    color: #fafdff;
-    font-weight: 900;
-    font-size: 28px;
-    position: absolute;
-    left: 11.5%;
-    top: 24%;
-
-    transform: rotate(-5deg);
-    text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.6);
-    display: block;
-
-
-
+.btnEdu{
+    width: 100%;
+    
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
 }
 
-.cartel p {
-    position: absolute;
-    width: 170px;
-    height: 20%;
-    top: 18%;
-    left: 11%;
-
-
-    font-size: 16px;
-    text-align: center;
-    transform: rotate(-5deg);
+#btnInfoMath{
+    background: none;
+    border: none;
+    color: #fff;
+    background-color: #39b91c;
+    border: 3px solid #fff;
+    
+    font-size: 22px;
     font-weight: bold;
-    color: #183711;
-    font-family: 'Darumadrop One', cursive;
-    text-shadow: 4px 4px 9px rgba(4, 255, 0, 0.6);
+    padding: 6px;
+    
+    border-radius: 7px;
+    cursor: pointer;
     transition: .5s;
-    display: none;
-
+    animation: milo 2s forwards infinite;
 }
 
-.cartel h1 span {
-    color: #39b91c;
-    text-shadow: 4px 4px 9px rgba(12, 255, 49, 0.6);
+@keyframes milo {
+    0%{
+        transform: scale(95%);
+        background-color: #39b91c;
+    }
 
+   50%{
+    transform: scale(100%);
+    background-color: #328120;
+   }
+    100%{
+        transform: scale(95%);
+        background-color: #39b91c;
+    }
+    
+}
+#btnInfoMath:hover{
+    background-color: #183711;
+}
+
+
+
+.alert {
+    /* background: rgb(88,174,99);
+    background: linear-gradient(180deg, rgba(88,174,99,1) 0%, rgba(34,107,46,1) 100%);*/
+    position: absolute;
+    background-image: url(pizarra-colegio.jpg);
+    background-size: contain ;
+    background-position: center;
+    width: 50%;
+    height: 68%;
+    border: px solid #ffffff;
+    box-shadow: 1px 1px 34px -2px rgba(0,0,0,1);
+-webkit-box-shadow: 1px 1px 34px -2px rgba(0,0,0,1);
+-moz-box-shadow: 1px 1px 34px -2px rgba(0,0,0,1);
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.alert h1{
+    color: #fff;
+ 
+    text-shadow: 0px 1px 8px rgba(21,167,22,1);
+    border-bottom : 3px solid #fff ;
+  display: flex;
+  align-items: center;
+}
+
+.alert p{
+    width: 65%;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #fff;
+    
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.74);
+    font-family: 'Darumadrop One', cursive;
+   
+}
+
+.alert button{
+    background: none;
+    border: none;
+    color: #fff;
+    background-color: #39b91c;
+    border: 1.5px solid #fff;
+    
+    font-size: 16px;
+    font-weight: bold;
+    padding: 2px;
+  
+    
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+
+
+.contentPi{
+    height: 30em;
+    width: 45em;
+    background-image: url(pizarra-colegio.jpg);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+
+.cartel{
+    display: flex;
+    height: 40%;
+    width: 40%;
 }
 
 
 .cartel img {
     display: flex;
-    width: 90%;
-    position: relative;
-    height: 80%;
-    left: 0%;
+   
 }
 
 
 
 
-.cartel .info__math {
-    color: #fff;
-    background-color: #39b91c;
-    border: 2px solid white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    font-family: poppins;
-    position: absolute;
-    top: 42.7%;
-    left: 16%;
-    transform: rotate(-5deg);
-
-}
 
 #ocultar_info {
     position: absolute;

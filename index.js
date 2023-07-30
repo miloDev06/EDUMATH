@@ -383,5 +383,20 @@ function generarJe(){
 /* aaaaa */
 }
 
+function verInfoEDU(){
+   let pizarra = document.querySelector(".pizarra");
+   let info = document.querySelector(".alert");
+   info.style.display="flex";
+   pizarra.style.display="none"
+
+}
+function cerrarInfoEDU(){
+   let pizarra = document.querySelector(".pizarra");
+   let info = document.querySelector(".alert");
+   info.style.display="none";
+   pizarra.style.display="flex"
+
+}
+
 
 

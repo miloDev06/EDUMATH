@@ -33,24 +33,31 @@
 
    <div id="section-1">
       <div class="container">
-         <div class="cartel">
-            <img src="niño_cartel-removebg-preview.png" alt="">
-            <h1 id="edumath">¿QUÉ ES <br> EDU<span> MATH </span>?</h1>
-            <p id="info">herramientas tecnologica <br> la cual brinda los recursos nesecarios para mejorar el
-               rendimiento matematico</p>
-            <button type="button" class="info__math" id="ver_info" onclick="verInfo ();">i</button type="button">
-            <button type="button" class="info__math" id="ocultar_info" onclick="ocultarInfo ();">i</button
-               type="button">
-         </div>
-
+         
+        <div class="alert">
+            <h1>¿Que es EDUMATH?</h1>
+            <p>Es un sitio web educativo matematico orientado hacia 
+               los niños de primaria para el aprendizaje interactivo,
+                Edumath permite a los niños entender conceptos matematicos
+                 fundamentales reforzando su capacidad cognitiva a través
+                  de ejercicios practicos y juegos.</p>
+                  <button id="btnCerrarInfo" onclick="cerrarInfoEDU();">Cerrar</button>
+        </div>
 
 
 
          <div class="pizarra">
+            <div class="contentPi">
 
             <h2 class="content__pizarra">Emiliano presenta</h2>
-            <h3 class="loading-text content__pizarra">EDUMATH</h3>
+            <h3 class=" content__pizarra">EDUMATH</h3>
             <p class="content__pizarra">Descubriendo un mundo matematico</p>
+        
+            </div>
+
+            <div class="btnEdu">
+               <button id="btnInfoMath" onclick="verInfoEDU();">¿ Que es EDUMATH ?</button>
+            </div>
          </div>
 
          <div class="pizarra__2">
@@ -61,6 +68,8 @@
             </div>
             
          </div>
+
+         
       </div>
 
    </div>
