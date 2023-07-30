@@ -324,6 +324,7 @@ hr {
 .pizarra {
 
     display: flex;
+    
 
     flex-direction: column;
     align-items: center;
@@ -331,6 +332,7 @@ hr {
 
     background-image: url(pizarra-colegio.jpg);
     background-size: cover;
+    background-position-x: center;
     height: 62%;
 
     width: 50%;
@@ -361,7 +363,7 @@ hr {
     left: 11%;
 
 
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     transform: rotate(-5deg);
     font-weight: bold;
@@ -387,6 +389,8 @@ hr {
     height: 80%;
     left: 0%;
 }
+
+
 
 
 .cartel .info__math {
@@ -428,7 +432,7 @@ hr {
 
     margin: 0%;
     letter-spacing: 1px;
-    font-size: 70px;
+    font-size: 60px;
     transition: .5s;
 
 
@@ -506,7 +510,7 @@ hr {
     top: 50%;
     left: 0;
     background-color: #6dd23e;
-    animation: loading-bars 1.5s ease-in-out infinite;
+    animation: g-bars 1.5s ease-in-out infinite;
 }
 
 .loading-text:before {
@@ -531,7 +535,7 @@ hr {
     }
 }
 
-@keyframes loading-bars {
+@keyframes g-bars {
     0% {
         transform: scale(1, 1);
     }
@@ -1022,6 +1026,10 @@ hr {
     background-color: #000000;
 }
 
+
+.pizarra__2{
+    display: none;
+}
 .ejerciciosFraccionesDificiles h4 {
     background-color: #124783;
     border: 1px solid #fff;
@@ -1119,14 +1127,59 @@ hr {
 @media (max-width: 800px) {
     .pizarra {
 
-        display: flex;
+        display: none;
         justify-content: center;
-      
+        background-position: center;
         width: 90%;
        
         
-      
+    }
 
+    .pizarra__2{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+
+     .contentPizarra h1{
+        color: #fff;
+       font-size: 3em;
+            text-shadow: 0px 1px 5px rgba(255,255,255,0.79);
+          
+        
+     }
+
+    
+    .contentPizarra {
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        background-image: url(pizarra-colegio.jpg);
+        background-size: cover;
+        background-position: center;
+        
+        width: 100%;
+
+        
+        height: 60%;
+    }
+
+
+    .contentPizarra h3{
+        font-size: 2.7em;
+        font-family: poppins;
+        
+    }
+    .contentPizarra h2, h3{
+        color: #39b91c;
+        font-size: 20px;
+        font-family: 'Darumadrop One', cursive;
     }
 
 
@@ -1339,7 +1392,121 @@ f
 @media (min-width: 300px) and (max-width: 1500px){
 /* TODO LO RESPONSIVE APARTIR DE AQUI */
 
+  .nav {
+    justify-content: space-between;
+    position: fixed;
+  }
+
+
   
+ 
+  .nombreLogo img{
+    margin-right: 0%;
+    height: 40px;
+  }
+
+  .nav a{
+    font-size: 16px;
+    margin: 10px;
+  }
+
+
+  /* boton de jerarquia */
+
+  #btn__jerarquia {
+    width: 70%;
+    height: auto;
+  }
+
+  #btn__jerarquia img{
+    height: 50px;
+  }
+
+  #btn__jerarquia h1{
+    font-size: 20px;
+  }
+ 
+
+   /*boton fracciones*/
+
+   #btn__fraccion1 {
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #4299FA;
+    width: 70%;
+  }
+
+  #btn__fraccion1 img{
+    height: 50px;
+  }
+
+  #btn__fraccion1 h1{
+    font-size: 20px;
+  }
+
+
+  .contenedorEjerciciosFracciones{
+    width: 85%;
+    margin-top: 10px;
+}
+
+.tituloDeEjerciciosFracciones{
+    font-size: 8px;
+    text-align: center;
+}
+
+.imgDeEjerciciosFracciones img{
+    height: 60px;
+}
+
+.ejerciciosJe h4{
+    font-size: 7px;
+    
+    font-weight: 100;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+.ejerciciosJe button{
+    padding: 4px;
+    font-size: 9px;
+    text-align: center;
+    height: 30px;
+
+}
+
+
+.infoFracciones p{
+    font-size: 16px;
+}
+
+.contenedorEjerciciosJerarquia{
+    width: 85%;
+    margin-top: 10px;
+}
+
+.tituloDeEjerciciosJerarquia{
+    font-size: 8px;
+    text-align: center;
+}
+
+.imgDeEjerciciosJerarquia img{
+    height: 60px;
+}
+
+.ejerciciosFr h4{
+    font-size: 8px;
+    font-weight: 100;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+.ejerciciosFr button{
+    padding: 4px;
+    font-size: 7px;
+    height: 30px;
+
+}
 
 }
 
@@ -1456,6 +1623,10 @@ f
         font-size: 16px;
     }
   
+
+    .contentPizarra h3{
+        color: #0077ff;
+    }
     
     
    
