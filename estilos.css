@@ -1125,6 +1125,10 @@ hr {
 }
 
 @media (max-width: 800px) {
+
+    .body {
+        background-color: #183711;
+    }
     .pizarra {
 
         display: none;
