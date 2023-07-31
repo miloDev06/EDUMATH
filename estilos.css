@@ -52,7 +52,10 @@ hr {
     width: 90%;
 
 }
-
+.nombreLogo2 a{
+    margin: 10px;
+    font-size: 1.4em;
+}
 #section-3 {
     width: 100vw;
     height: 100vh;
