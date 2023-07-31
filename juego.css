@@ -64,16 +64,18 @@ body {
 
 #msj_correccion {
     background-color: #000;
-    height: 100px;
-    padding: 0% 20%;
-    width: 50%;
-    position: relative;
-    margin: auto;
     border: 3px dashed #63a7ff;
+    height: 100px;
+    margin: auto;
+    padding: 0% 2%;
+    width: 50%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    overflow-y: scroll;
+    justify-content: center;
+    overflow-x: scroll;
+    white-space: nowrap;
+    gap: 10px;
+
 }
 
 
@@ -95,6 +97,7 @@ body {
 
 .container h2 {
     color: #fff;
+    padding: 10px 5px;
     background-color: #63a7ff;
     border: 3px solid #ffffff;
     width: 50%;
@@ -184,14 +187,6 @@ i {
     display: inline-block;
     margin: 5px;
 }
-
-#msj_correccion {
-    display: flex;
-    text-align: center;
-
-
-}
-
 
 
 .fa-face-frown {
@@ -284,8 +279,6 @@ i {
     .container-operadores button {
         border: none;
         margin: 5px 25px 40px;
-
-        width: 10%;
         height: 8%;
         border-radius: 10%;
         border: 1px solid black;
@@ -326,7 +319,7 @@ i {
         border: none;
         border-bottom: 2px solid #fff;
         font-size: 30px;
-        width: 50px;
+        width: 25%;
 
     }
 
@@ -370,6 +363,10 @@ i {
 
     .nav .logo a {
         font-size: 1.2em;
+    }
+
+    #check__done{
+        height: 40px;
     }
 }
 
