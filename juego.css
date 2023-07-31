@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 * {
     box-sizing: border-box;
     font-family: 'Patrick Hand';
@@ -13,7 +14,7 @@ body {
     background-size: cover;
 }
 
-.nav{
+.nav {
     background-color: #0b085a;
     height: 10%;
     display: flex;
@@ -23,19 +24,19 @@ body {
     z-index: 1000;
 }
 
-.nav .logo{
+.nav .logo {
     display: flex;
     place-items: center;
     padding: 10px;
-     
+
 }
 
-.nav .logo img{
+.nav .logo img {
     width: 60px;
     margin: 5px;
 }
 
-.nav .logo a{
+.nav .logo a {
     color: #fff;
     font-size: 2em;
     margin: 5px;
@@ -43,23 +44,25 @@ body {
     font-family: poppins;
 }
 
-.nav .back{
+.nav .back {
     display: flex;
     place-items: center;
     padding: 10px;
-     
+
 }
 
-.nav .back a{
+.nav .back a {
     color: #fff;
     font-size: 1.5em;
     margin: 5px;
     text-decoration: none;
     font-family: poppins;
 }
-#msj_correccion{
+
+#msj_correccion {
     background-color: #000;
     height: 100px;
+    padding: 0% 20%;
     width: 50%;
     position: relative;
     margin: auto;
@@ -67,26 +70,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: scroll;
 }
 
 
 
 .container {
     max-width: 100%;
-   
+
     height: 90vh;
-   
+
     position: relative;
     top: 100px;
-   background-image: url(pizarra-colegio.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
+    background-image: url(pizarra-colegio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: auto;
     padding: 20px;
     text-align: center;
 }
 
-.container h2{
+.container h2 {
     color: #fff;
     background-color: #63a7ff;
     border: 3px solid #ffffff;
@@ -127,13 +131,13 @@ body {
     font-weight: bold;
     justify-content: center;
     align-items: center;
-    
-    
-   
+
+
+
     padding: 6px 0;
 }
 
-#respuesta_usuario{
+#respuesta_usuario {
     color: #fff;
 
 }
@@ -152,10 +156,10 @@ body {
 }
 
 #corregir {
-   
+
     border: none;
     font-size: 18px;
-   
+
     padding: 0px;
     transition: .5s;
     border-radius: 50%;
@@ -181,8 +185,8 @@ i {
 #msj_correccion {
     display: flex;
     text-align: center;
-    
-    
+
+
 }
 
 
@@ -203,26 +207,29 @@ i {
     0% {
         transform: scale(0);
     }
+
     100% {
         transform: scale(1);
     }
 }
 
-#num1, #num2, #operacion, #igual{
+#num1,
+#num2,
+#operacion,
+#igual {
     color: #fff;
 
 }
 
-#check__done{
+#check__done {
     display: flex;
 
     padding: 0px;
     border-radius: 50%;
     height: 50px
-    
 }
 
-#tittle{
+#tittle {
     display: flex;
     position: relative;
     height: 60px;
@@ -235,110 +242,141 @@ i {
     background-color: #1bffb5;
     border-radius: 10px;
     transition: .5s;
-    }
-
-    #tittle:hover{
-        background-color: #248169;
-        transform: scale(80%);
-    }
-
-
-    #tittle h1{
-        color: #fff;
-        text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
-        
-       
-    }
-
-    #tittle a{
-        text-decoration: none;
-        
-    }
-    
-    @media (max-width:1120px){
-        .container h2{
-            font-size: 1.7em;
-            color: #fff;
-            background-color: #63a7ff;
-            border: 3px solid #ffffff;
-            width: 80%;
-            border-radius: 7px;
-            
-            position: relative;
-            margin: auto;
-            margin-bottom: 10%;
-        }
-
-        .container-operadores button{
-            border: none;
-            margin: 5px 25px 40px;
-            
-            width: 10%;
-            height: 8%;
-            border-radius: 10%;
-            border: 1px solid black;
-            cursor: pointer;
-            transition: .5s;
-            box-shadow: 5px 5px 5px #000;
-            margin-bottom: 0%;
-        }
-
-        #msj_correccion{
-            background-color: #000;
-            height: 100px;
-            width: 90%;
-            height: 10%;
-            position: relative;
-            margin: auto;
-            border: 3px dashed #63a7ff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .fa-face-frown {
-            color: red;
-            font-size: 1.3em;
-            animation: zoom .5s forwards
-        }
-        
-        .fa-face-grin {
-            color: #63a7ff;
-            font-size: 1.3em;
-            animation: zoom .5s forwards
-        }
-
-        
-.container-operacion input {
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid #fff;
-    font-size: 30px;
-    width: 50px;
-   
 }
 
-#num1, #num2, #operacion, #igual{
+#tittle:hover {
+    background-color: #248169;
+    transform: scale(80%);
+}
+
+
+#tittle h1 {
     color: #fff;
-    font-size: 30px;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+
+
+}
+
+#tittle a {
+    text-decoration: none;
 
 }
 
 
-.nav .back a{
-    font-size: 1.1em;
-    
- }
 
- .nav .logo a{
-    font-size: 1.5em;
- }
+@media (max-width:1120px) {
+    .container h2 {
+        font-size: 1.7em;
+        color: #fff;
+        background-color: #63a7ff;
+        border: 3px solid #ffffff;
+        width: 80%;
+        border-radius: 7px;
+
+        position: relative;
+        margin: auto;
+        margin-bottom: 10%;
+    }
+
+    .container-operadores button {
+        border: none;
+        margin: 5px 25px 40px;
+
+        width: 10%;
+        height: 8%;
+        border-radius: 10%;
+        border: 1px solid black;
+        cursor: pointer;
+        transition: .5s;
+        box-shadow: 5px 5px 5px #000;
+        margin-bottom: 0%;
+    }
+
+    #msj_correccion {
+        background-color: #000;
+        height: 100px;
+        width: 90%;
+        height: 10%;
+        position: relative;
+        margin: auto;
+        border: 3px dashed #63a7ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fa-face-frown {
+        color: red;
+        font-size: 1.3em;
+        animation: zoom .5s forwards
+    }
+
+    .fa-face-grin {
+        color: #63a7ff;
+        font-size: 1.3em;
+        animation: zoom .5s forwards
+    }
 
 
-.nav{
-    height: 15%;
+    .container-operacion input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #fff;
+        font-size: 30px;
+        width: 50px;
+
+    }
+
+    #num1,
+    #num2,
+    #operacion,
+    #igual {
+        color: #fff;
+        font-size: 30px;
+
+    }
+
+
+    .nav .back a {
+        font-size: 1.5em;
+
+    }
+
+    .nav .logo a {
+        font-size: 1.5em;
+    }
+
+
+    .nav {
+        height: 15%;
+        max-height: 80px;
+        min-height: 60px;
+    }
+
+    .nav .logo img {
+        height: 40px;
+        width: 40px;
+    }
 }
 
-.nav .logo img{
-   height: 40px;
-width: 40px; }
-     }
+@media (max-width:700px) {
+    .nav .back a {
+        font-size: 1.2em;
+
+    }
+
+    .nav .logo a {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width:500px) {
+    .nav .back a {
+        font-size: 0.9em;
+
+    }
+
+    .nav .logo a {
+        font-size: 0.9em;
+    }
+}

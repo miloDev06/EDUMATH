@@ -57,18 +57,20 @@ body{
     border: 1px solid #fff;
     border-color: rgb(113, 200, 241), rgb(204, 203, 153), rgb(246, 126, 128), rgb(162, 237, 162);
 }
+
 nav{
  display: flex;
  justify-content: space-between;
- height: 80px;
- position: absolute;
- z-index: 10;
+ height: 10%;
+ position: fixed;
+ z-index: 10000;
  width: 100%;
  background-color: #0f2b5f;
 }
 
 nav .logo{
     display: flex;
+	place-items: center;
     margin: 8px;
 }
 
@@ -87,9 +89,6 @@ nav .logo h1{
 nav .back a{
     color: #fff;
     font-size: 25px;
-    margin: 10px;
-    position: relative;
-    right: 100px;
     padding: 10px;
     font-family: "poppins";
     text-decoration: none;
@@ -102,7 +101,10 @@ nav .back a:hover{
 
 nav .back{
     display: flex;
+	place-items: center;
+	padding: 10px;
 }
+
 
 
 .boton{
@@ -264,3 +266,48 @@ background: linear-gradient(180deg, rgba(32,178,255,1) 0%, rgba(27,118,164,1) 10
 }
 
 
+@media (max-width:1120px) {
+
+    nav .back a {
+        font-size: 1.5em;
+
+    }
+
+    nav .logo h1 {
+        font-size: 1.5em;
+    }
+
+
+    nav {
+        height: 15%;
+        max-height: 80px;
+        min-height: 60px;
+    }
+
+    nav .logo img {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media (max-width:700px) {
+    nav .back a {
+        font-size: 1.2em;
+
+    }
+
+    nav .logo h1 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width:500px) {
+    nav .back a {
+        font-size: 0.9em;
+
+    }
+
+    nav .logo h1 {
+        font-size: 0.9em;
+    }
+}
