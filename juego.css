@@ -7,11 +7,14 @@
 
 body {
     background-color: slategray;
-    margin: 0;
+    height: 100%;
     background-image: url(pizarra-colegio.jpg);
     background-repeat: no-repeat;
-    height: 100%;
-    background-size: cover;
+    background-size: auto;
+    background-position: center center;
+    background-attachment: fixed; 
+    margin: 0; 
+    padding: 0; 
 }
 
 .nav {
