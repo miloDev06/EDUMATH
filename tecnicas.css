@@ -1,0 +1,147 @@
+
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+.nav {
+    background-color: #0f2b5f;
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1% 2%;
+    align-items: center;
+    font-family: poppins;
+    position: fixed;
+    z-index: 500000;
+}
+
+.nombreLogo {
+    display: flex;
+    width: 25%;
+    justify-content: left;
+    align-items: center;
+}
+
+.nombreLogo img {
+    width: 50px;
+    margin-right: 4%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+}
+
+hr {
+    border: .5px solid rgb(182, 182, 182);
+    width: 90%;
+}
+
+.main{
+    background-image: url(pizarra-colegio.jpg);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+   justify-content: center;
+   align-items: center;
+   font-family: poppins;
+}
+
+.container{
+    
+    height: 70%;
+    width: 70%;
+    display: none;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.titulo{
+    width: 100%;
+    background-color: #0f2b5f;
+    border-bottom: 3px solid #fff;
+    border-radius: 10px;
+    top: 0%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    text-align: center;
+  
+}
+
+
+
+    
+
+
+ 
+.titulo h1{
+    color: #ffffff;
+    transition: .5s;
+    text-shadow: #969696 0px 0px 10px ;
+}
+
+.titulo h1:hover{
+    color: #ffffff;
+}
+
+.tecnicas{
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+   background-image: url(calculadora-cerca-papeleria-forma-geometrica.jpg);
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  
+}
+
+.tecnica{
+    margin: 0px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 5px 2px rgba(10,34,111,0.75);
+-webkit-box-shadow: 2px 5px 5px 2px rgba(10,34,111,0.75);
+-moz-box-shadow: 2px 5px 5px 2px rgba(10,34,111,0.75);
+
+}
+
+.tecnica button {
+    border: 2px solid #fff;
+    background-color: #0f2b5f;
+    margin: 20px;
+    color: #fff;
+    font-family: poppins;
+    border-radius: 7px;    
+    padding: 5px 15px;
+    font-size: 100%;
+    cursor: pointer;
+    text-align: center;
+    text-shadow: #969696 0px 0px 10px ;
+    transition: .5s;
+}
+
+.tecnica button:hover{
+    background-color: #0063c0;
+    text-shadow: #0f2b5f 0px 0px 7px ;
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
