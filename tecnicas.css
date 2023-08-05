@@ -250,3 +250,76 @@ span{
 .back button:hover{
     background-color: #000249;
 }
+
+/*section 2*/
+
+.section2{
+    display: none;
+    flex-direction: column;
+    height: 70%;
+    width: 70%;
+   
+    align-items: center;
+    border: 3px solid #fff;
+    border-radius: 4px;
+
+    background-image: url(calculadora-cerca-papeleria-forma-geometrica.jpg);
+}
+
+
+.tituloRegla2{
+    background-color: #0f2b5f;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    position: relative;
+    top: 0px;
+    
+}
+
+.tituloRegla2 h1{
+    color: #fff;
+}
+
+.infoRegla2 {
+    
+    width: 100%;
+    display: flex;
+    
+    background-size: cover;
+
+    justify-content: center;
+    
+
+}
+
+.infoRegla2 p{
+    font-family: 'Darumadrop One', cursive;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    width: 80%;
+}
+
+
+.imgEjemplo2 {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    top: 10px;
+    display: flex;
+}
+.imgEjemplo2 img{
+    filter:invert(-10%);
+    border-radius: 10px;
+    height: 100px;
+}
+
+.tituloEjemplo {
+    color:#fff;
+    margin-top: 0px;
+    font-family: 'Darumadrop One', cursive;
+}
