@@ -621,7 +621,7 @@ hr {
     }
 }
 
-#arquia {
+#info__jerarquia {
     display: none;
     flex-direction: column;
     position: relative;
@@ -629,16 +629,18 @@ hr {
     text-align: center;
     left: 0px;
     margin-bottom: 0%;
-    width: 90%;
+    width: 80%;
   
 
 }
+
+
 
 .ocultar__jerarquia{
     background-color: #0077ff;
 }
 
-#arquia span {
+#info__jerarquia span {
     font-family: poppins;
 
     font-weight: bold;
@@ -646,8 +648,9 @@ hr {
 
 }
 
-#arquia p {
-    font-size: 130%;
+#info__jerarquia p {
+    font-size: 22px;
+    width: 100%;
     
 }
 
@@ -1406,7 +1409,7 @@ hr {
     }
 
 
-    #arquia p {
+    #info__jerarquia p {
         font-size: 16px;
     }
 
