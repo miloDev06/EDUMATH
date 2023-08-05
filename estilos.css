@@ -356,7 +356,7 @@ hr {
     font-size: 22px;
     font-weight: bold;
     padding: 6px;
-    
+    font-family: poppins;
     border-radius: 7px;
     cursor: pointer;
     transition: .5s;
@@ -621,18 +621,24 @@ hr {
     }
 }
 
-#info__jerarquia {
+#arquia {
     display: none;
     flex-direction: column;
     position: relative;
     justify-content: start;
     text-align: center;
     left: 0px;
+    margin-bottom: 0%;
     width: 90%;
+  
 
 }
 
-#info__jerarquia span {
+.ocultar__jerarquia{
+    background-color: #0077ff;
+}
+
+#arquia span {
     font-family: poppins;
 
     font-weight: bold;
@@ -640,9 +646,9 @@ hr {
 
 }
 
-#info__jerarquia p {
-    font-size: 25px;
-    top: 0px;
+#arquia p {
+    font-size: 130%;
+    
 }
 
 
@@ -689,11 +695,16 @@ hr {
     align-items: center;
     color: #fff;
     font-size: 20px;
+    
+     position: relative;
+     top: 150px;
+
+
+
 
 
     font-family: poppins;
-    position: relative;
-    top: 130px;
+    
 }
 
 #toca__aqui h4 {
@@ -710,7 +721,7 @@ hr {
     margin-top: 0;
     padding: 0;
     position: absolute;
-    top: 220px;
+   
     animation: flecha 2s ease-in-out infinite;
 }
 
@@ -733,6 +744,14 @@ hr {
 
 /* jerarquia */
 
+.jerarquia{
+    display: flex;
+    height: 100%;
+   
+    top: 0%;
+    justify-content: center;
+}
+
 
 .contenedorEjerciciosJerarquia{
     background-image: url(calculadora-cerca-papeleria-forma-geometrica.jpg);
@@ -741,8 +760,11 @@ hr {
     border-radius: 10px;
    
     
-    margin-top: 130px;
-    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+
     display: none;
 }
 
@@ -815,8 +837,8 @@ hr {
     font-family: darumadrop;
     font-weight: bold;
     transition: .5s;
-    position: absolute;
-    top: 100px;
+    top: 50px;
+   
     padding: 5px;
     border-radius: 10px;
 }
@@ -828,10 +850,11 @@ hr {
 }
 
 #btn__ocultarJerarquia {
-    top: 20em;
+    
     width: 100px;
     justify-content: center;
     position: relative;
+    margin: 0%;
 }
 
 .contenedorEjerciciosFracciones {
@@ -842,6 +865,13 @@ hr {
     display: none;
     bottom: 50px;
     position: relative;
+}
+
+.presentacionEjerciciosFracciones{
+    display: flex;
+    flex-direction: column ;
+    width: 80%;
+
 }
 .ejerciciosJe{
     
@@ -1191,7 +1221,7 @@ hr {
 @media (max-width: 800px) {
      
     
-
+  
     .body {
         background-color: #183711;
     }
@@ -1266,20 +1296,21 @@ hr {
     }
 
     nav a {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .nav{
         height: 70px;
 
+
     }
 
-    .nav a{
-        font-size: 30px;
-    }
+    
 
     .nombreLogo {
         margin-right: 0px;
+        
+
     }
 
     .cartel {
@@ -1375,14 +1406,17 @@ hr {
     }
 
 
-    #info__jerarquia p {
+    #arquia p {
         font-size: 16px;
     }
 
 
    
 
-   
+   .contenedorEjerciciosJerarquia{
+    position: relative;
+    top: 7%;
+   }
 
 
     .container {
@@ -1395,7 +1429,7 @@ hr {
 
         align-items: center;
     }
-f
+
 
     #btn__fraccion1 {
         display: flex;
@@ -1463,12 +1497,11 @@ f
 /* TODO LO RESPONSIVE APARTIR DE AQUI */
 
   .nav {
-    justify-content: space-between;
+    justify-content: space-around;
     position: fixed;
   }
 
-
-
+ 
   
  
   .nombreLogo img{
@@ -1476,9 +1509,14 @@ f
     height: 40px;
   }
 
+  .nombreLogo2 a{
+   
+    margin-right: 0%;
+  }
+
   .nav a{
-    font-size: 16px;
-    margin: 10px;
+    font-size: 12px;
+    
   }
 
 
@@ -1553,7 +1591,7 @@ f
 
 .contenedorEjerciciosJerarquia{
     width: 85%;
-    margin-top: 10px;
+   
 }
 
 .tituloDeEjerciciosJerarquia{
@@ -1823,4 +1861,90 @@ background: linear-gradient(180deg, rgba(88,104,174,1) 0%, rgba(32,41,131,1) 100
         display: none;
       }
    
+}
+
+
+/* nest hub max */
+@media screen and (min-width: 800px) and (max-width: 1280px){
+    .presentacionEjerciciosJerarquia{
+        width: 80%;
+    }
+
+    .tituloDeEjerciciosJerarquia h1{
+        font-size: 24px;
+    }
+
+    .ejerciciosFr h4{
+        font-size: 18px;
+    }
+
+
+    .presentacionEjerciciosJerarquia button{
+        font-size: 18px;
+        justify-content: center;display: flex;
+        align-items: center;
+    }
+
+    .imgDeEjerciciosJerarquia img{
+      height: 100px;
+       }
+
+       #info__jerarquia {
+        width: 80%;
+       }
+       
+
+       #info__jerarquia p{
+        font-size: 18px;
+       }
+       #btn__jerarquia{
+        width: 30%;
+       }
+
+       #info__jerarquia span{
+        color: #0077ff;
+       }
+
+       
+
+/* fracciones */
+
+
+       .presentacionEjerciciosFracciones{
+        width: 80%;
+    }
+
+    .tituloDeEjerciciosFracciones h1{
+        font-size: 24px;
+    }
+
+    .ejerciciosJe h4{
+        font-size: 18px;
+    }
+
+
+    .presentacionEjerciciosFracciones button{
+        font-size: 18px;
+        justify-content: center;display: flex;
+        align-items: center;
+    }
+
+    .imgDeEjerciciosFracciones img{
+      height: 100px;
+       }
+
+       .infoFracciones p{
+        font-size: 24px;
+       }
+
+
+       /* nav */
+
+       .nav a{
+        font-size: 22px;
+       }
+
+       .nombreLogo2 a{
+        margin: 10px;
+       }
 }
