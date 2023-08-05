@@ -17,6 +17,10 @@ body{
     z-index: 500000;
 }
 
+button{
+    cursor: pointer;
+}
+
 .nombreLogo {
     display: flex;
     width: 25%;
@@ -56,7 +60,7 @@ hr {
     
     height: 70%;
     width: 70%;
-    display: none;
+    display: flex;
     border: 3px solid #fff;
     border-radius: 10px;
     align-items: center;
@@ -138,14 +142,16 @@ hr {
 }
 
 .section1{
-    display: flex;
+    display: none;
     flex-direction: column;
     height: 70%;
     width: 70%;
-    justify-content: center;
+   
     align-items: center;
     border: 3px solid #fff;
     border-radius: 4px;
+
+    background-image: url(calculadora-cerca-papeleria-forma-geometrica.jpg);
 }
 
 .tituloRegla1{
@@ -157,6 +163,8 @@ hr {
     justify-content: center;
     align-items: center; 
     text-align: center;
+    position: relative;
+    top: 0px;
     
 }
 
@@ -165,11 +173,14 @@ hr {
 }
 
 .infoRegla1 {
-    background-image: url(calculadora-cerca-papeleria-forma-geometrica.jpg);
+    
     width: 100%;
     display: flex;
-    height: 100%;
+    
     background-size: cover;
+
+    justify-content: center;
+    
 
 }
 
@@ -178,8 +189,64 @@ hr {
     font-size: 20px;
     color: #fff;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    width: 80%;
 }
 
 .numero{
    color: #0f2b5f;
+}
+
+.once{
+    color: #0084ff;
+    
+}
+span{
+    font-family: poppins;
+}
+
+.ejemplo{
+    color: #0fff09;
+}
+
+.resultado{
+    color: #000249;
+}
+
+
+.imgEjemplo {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    top: 10px;
+    display: flex;
+}
+.imgEjemplo img{
+    filter:invert(-10%);
+    border-radius: 10px;
+    height: 100px;
+}
+
+.back {
+    position: relative;
+    margin-top: auto;
+    bottom: 10px;
+}
+
+.back button{
+    background: none;
+    border: none;
+    background-color: #0084ff
+    ;
+    color: #ffffff;
+    border: 2px solid #000249;
+    font-weight: bold;
+    font-family: poppins;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: .5s;
+
+}
+
+.back button:hover{
+    background-color: #000249;
 }
