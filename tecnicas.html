@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnicas Matematicas</title>
     <link rel="stylesheet" href="tecnicas.css">
+    <link rel="icon" href="icono.ico">
     <link
       href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Poppins:wght@900&family=Raleway:wght@100&display=swap"
       rel="stylesheet">
@@ -13,10 +14,10 @@
     <nav class="nav">
         <div class="nombreLogo">
            <img src="mate.png" alt="">
-           <a href="#section-1">EDUMATH</a>
+           <a href="index.html#section-1">EDUMATH</a>
         </div>
         <div class="nombreLogo2">
-           <a href="#section-3">MATE LECTURA</a>
+           <a href="index.html#section-3">MATE LECTURA</a>
         </div>
      </nav>
 
@@ -38,7 +39,7 @@
                 </div>
 
                 <div class="tecnica">
-                 <button>La regla de la suma</button>
+                 <button onclick="verRegla3();">La regla de la suma</button>
                 </div>
 
             </div>
@@ -57,7 +58,8 @@
             simplemente hay que sumar las dos cantidades del numero y 
             colocar el resultado en medio, miremos el siguiente ejemplo:
         <span class="ejemplo">63 * 11</span> Sumemos el <b>6</b> + <b>3</b> esto nos dara como resultado <span class="numero">9</span> este 9 lo colocamos en medio del <span class="numero">63</span> y tendremos el resultado <span class="resultado">693</span></p>
-        </div>
+       
+    </div>
         
         <div class="imgEjemplo">
             <img src="Captura de pantalla (314).png" alt="">
@@ -82,7 +84,7 @@
                 El primer digito es <span class="once">6</span> y el numero que le sigue es <span class="once">7</span>,
                 si multiplicamos <span class="ejemplo">6 * 7</span> obtenemos como resultado <span class="resultado">42 </span>y si le agregamos <span class="numero">25</span>
                 al final tenemos la respuesta = <span class="resultado">4225</span>
-                <br><br> 
+                
             </p>
         </div>
         <div class="imgEjemplo2">
@@ -92,6 +94,25 @@
         <h1 class="tituloEjemplo">Ejemplo</h1>
         <div class="back">
             <button onclick="ocultarRegla2();"> Cerrar </button>
+        </div>
+     </section>
+
+     <section class="section3">
+        <div class="tituloRegla3">
+            <h1 >La regla de las fracciones</h1>
+        </div>
+
+        <div class="infoRegla3">
+            <p>Cuando tenemos una suma de fracciones con diferente denominador , <span class="ejemplo"> 1/2 + 1/3</span> se multiplican los denominadores <span class="numero">(2*3)</span> y se deja el resultado como denominador final <span class="once">(6)</span> y luego multiplicamos en forma de <span class="ejemplo">"x"</span>  <span class="numero">(1 * 3</span> <span class="once"> + </span> <span class="numero">2 * 1)</span> y sumamos los numeradores para colocar el numerador final <span class="once">(5)</span> <br> <br> dejando como resultado = <span class="resultado">6/5</span></p>
+           
+        </div>
+        
+        <div class="imgEjemplo3">
+            <img src="suma-fracciones-mariposa.webp" alt="">
+        </div>
+        <h1 class="tituloEjemplo3">Ejemplo</h1>
+        <div class="back">
+            <button onclick="ocultarRegla3();"> Cerrar </button>
         </div>
      </section>
      </main>

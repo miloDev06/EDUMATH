@@ -72,7 +72,7 @@ hr {
     width: 100%;
     background-color: #0f2b5f;
     border-bottom: 3px solid #fff;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
     top: 0%;
     position: relative;
     display: flex;
@@ -105,10 +105,12 @@ hr {
     height: 100%;
     width: 100%;
    background-image: url(calculadora-cerca-papeleria-forma-geometrica.jpg);
-    border-radius: 7px;
+    border-radius: 0px 0px 7px 7px;
+    
     justify-content: center;
     align-items: center;
     margin: auto;
+    
   
 }
 
@@ -139,6 +141,7 @@ hr {
 .tecnica button:hover{
     background-color: #0063c0;
     text-shadow: #0f2b5f 0px 0px 7px ;
+    transform: scale(110%);
 }
 
 .section1{
@@ -323,3 +326,207 @@ span{
     margin-top: 0px;
     font-family: 'Darumadrop One', cursive;
 }
+
+/* fracciones */
+
+.section3{
+    display: none;
+    flex-direction: column;
+    height: 70%;
+    width: 70%;
+   
+    align-items: center;
+    border: 3px solid #fff;
+    border-radius: 4px;
+
+    background-image: url(calculadora-cerca-papeleria-forma-geometrica.jpg);
+}
+
+
+.tituloRegla3{
+    background-color: #0f2b5f;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    position: relative;
+    top: 0px;
+    
+}
+
+.tituloRegla3 h1{
+    color: #fff;
+}
+
+.infoRegla3 {
+    
+    width: 100%;
+    display: flex;
+    
+    background-size: cover;
+
+    justify-content: center;
+    
+
+}
+
+.infoRegla3 p{
+    font-family: 'Darumadrop One', cursive;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    width: 80%;
+}
+
+
+.imgEjemplo3 {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    top: 10px;
+    display: flex;
+}
+.imgEjemplo3 img{
+    filter:hue-rotate(50%);
+    border-radius: 10px;
+    height: 100px;
+
+}
+
+.tituloEjemplo3 {
+    color:#fff;
+    margin-top: 0px;
+    font-family: 'Darumadrop One', cursive;
+}
+
+.imgEjemplo, .imgEjemplo2, .imgEjemplo3 {
+    box-shadow: 0px 1px 12px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 1px 12px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 12px 0px rgba(0,0,0,0.75);
+
+}
+
+.tituloEjemplo, .tituloEjemplo2, .tituloEjemplo3{
+    text-shadow: 2px 2px 2px rgba(31,19,159,0.6);
+     }
+
+@media screen and (max-width: 1024px) and (max-height: 600px) {
+  .infoRegla1 p, .infoRegla2 p, .infoRegla3 p{
+    font-size: 14px;
+  }
+
+  .imgEjemplo img, .imgEjemplo2 img, .imgEjemplo3 img{
+    height: 60px;
+  }
+
+  .tituloEjemplo {
+    font-size: 18px;
+  }
+
+  .back button{
+    font-size: 14px;
+    padding: 4px;
+  }
+
+  .tecnica button{
+    font-size: 12px;
+  } .nav a{
+
+
+    font-size: 20px;
+
+  }
+
+  .titulo{
+    font-size: 14px;
+  }
+}     
+
+
+/* celulares */
+
+@media screen and (max-width: 800px) {
+    
+    body {
+      font-size: 16px;
+    }
+   
+    .nav img{
+        height: 40px;
+        padding: 5px;
+    }
+    .nav a{
+        font-size: 16px;
+    }
+
+    .main{
+        background-position-x: center;
+        
+    }
+
+    .titulo{
+        font-size: 10px;
+    }
+
+    .tecnicas{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .tecnica {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .tecnica button{
+        font-size: 10px;
+    }
+
+    .infoRegla1 p {
+       font-size: 13px;
+    }
+    
+    .infoRegla2 p{
+        font-size: 11px;
+    }
+
+    .infoRegla3 p{
+        font-size: 11px;
+    }
+    .imgEjemplo img {
+      height: 50px;
+    }
+    
+    .imgEjemplo2 img{
+        height: 40px;
+    }
+
+    .imgEjemplo3 img{
+        height: 40px;
+    }
+    .imgEjemplo, .imgEjemplo2, .imgEjemplo3 {
+        position: relative;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .tituloEjemplo, .tituloEjemplo2, .tituloEjemplo3{
+        font-size: 14px;
+    }
+
+    .back button{
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .tituloRegla1 h1, .tituloRegla2 h1, .tituloRegla3 h1{
+        font-size: 16px;
+        text-align: center
+    }
+  }
