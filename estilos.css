@@ -1863,6 +1863,10 @@ background: linear-gradient(180deg, rgba(88,104,174,1) 0%, rgba(32,41,131,1) 100
       .pizarra{
         display: none;
       }
+
+      .nav{
+        justify-content: space-between;
+      }
    
 }
 
