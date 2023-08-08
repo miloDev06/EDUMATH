@@ -141,6 +141,9 @@ function corregir() {
     //agrego el elemento al contenedor de las correciones
     msj_correccion.appendChild(i);
 
+    msj_correccion.scrollLeft = msj_correccion.scrollWidth;
+
+
     //controlo que tipo de operacion estoy para genera una nueva operacion
     if (operacion_actual == "+") {
         nuevaSuma();
